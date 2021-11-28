@@ -26,6 +26,7 @@ def MiOU(pred_mask, mask, smooth=1e-10, n_classes=23):
         mask = mask.contiguous().view(-1)
 
         iou_per_class = []
+        
         for clas in range(0, n_classes): #loop per pixel class
             true_class = pred_mask == clas
             true_label = mask == clas
