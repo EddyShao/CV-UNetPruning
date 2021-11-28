@@ -1,5 +1,5 @@
 # FrameWork
-## Here is the tips for beautiful users.
+## Here are the tips for beautiful users.
 ## Data
   - it will contain all the dataset generator we need
   - For now, here's only the dataset generator for CITYSCAPES
