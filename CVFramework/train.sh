@@ -23,3 +23,4 @@ cd /scratch/zs1542/CV-FinalProject/CVFramework
 python main.py
 
 echo "FINISH"
+echo "Have a Nice Day"
