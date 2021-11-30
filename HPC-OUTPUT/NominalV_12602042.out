@@ -1,0 +1,112 @@
+Your NetID is: zs1542
+Your environment is: py38
+start training
+
+Loading dataset...
+
+Selected dataset: cityscapes
+Dataset directory: /scratch/zs1542/CV_baseline
+Save directory: 
+Number of classes to predict: 20
+Train dataset size: 2975
+Validation dataset size: 500
+
+Training...
+
+
+>>>> [Epoch: 0] Training
+[Step: 0] Iteration loss: 3.0490
+[Step: 1] Iteration loss: 3.0465
+[Step: 2] Iteration loss: 3.0369
+[Step: 3] Iteration loss: 3.0238
+[Step: 4] Iteration loss: 3.0268
+[Step: 5] Iteration loss: 3.0212
+[Step: 6] Iteration loss: 3.0107
+[Step: 7] Iteration loss: 3.0137
+[Step: 8] Iteration loss: 3.0037
+[Step: 9] Iteration loss: 3.0030
+[Step: 10] Iteration loss: 2.9869
+[Step: 11] Iteration loss: 2.9928
+[Step: 12] Iteration loss: 2.9864
+[Step: 13] Iteration loss: 2.9770
+[Step: 14] Iteration loss: 2.9715
+[Step: 15] Iteration loss: 2.9672
+[Step: 16] Iteration loss: 2.9617
+[Step: 17] Iteration loss: 2.9558
+[Step: 18] Iteration loss: 2.9463
+[Step: 19] Iteration loss: 2.9444
+[Step: 20] Iteration loss: 2.9414
+[Step: 21] Iteration loss: 2.9267
+[Step: 22] Iteration loss: 2.9337
+[Step: 23] Iteration loss: 2.9171
+[Step: 24] Iteration loss: 2.9186
+[Step: 25] Iteration loss: 2.9071
+[Step: 26] Iteration loss: 2.9071
+[Step: 27] Iteration loss: 2.8875
+[Step: 28] Iteration loss: 2.8864
+[Step: 29] Iteration loss: 2.8940
+[Step: 30] Iteration loss: 2.8787
+[Step: 31] Iteration loss: 2.8771
+[Step: 32] Iteration loss: 2.8702
+[Step: 33] Iteration loss: 2.8656
+[Step: 34] Iteration loss: 2.8612
+[Step: 35] Iteration loss: 2.8596
+[Step: 36] Iteration loss: 2.8653
+[Step: 37] Iteration loss: 2.8394
+[Step: 38] Iteration loss: 2.8403
+[Step: 39] Iteration loss: 2.8292
+[Step: 40] Iteration loss: 2.8314
+[Step: 41] Iteration loss: 2.8264
+[Step: 42] Iteration loss: 2.8192
+[Step: 43] Iteration loss: 2.8163
+[Step: 44] Iteration loss: 2.8064
+[Step: 45] Iteration loss: 2.8084
+[Step: 46] Iteration loss: 2.8025
+[Step: 47] Iteration loss: 2.7811
+[Step: 48] Iteration loss: 2.7749
+[Step: 49] Iteration loss: 2.7776
+[Step: 50] Iteration loss: 2.7611
+[Step: 51] Iteration loss: 2.7587
+[Step: 52] Iteration loss: 2.7744
+[Step: 53] Iteration loss: 2.7694
+[Step: 54] Iteration loss: 2.7541
+[Step: 55] Iteration loss: 2.7560
+[Step: 56] Iteration loss: 2.7334
+[Step: 57] Iteration loss: 2.7386
+[Step: 58] Iteration loss: 2.7348
+[Step: 59] Iteration loss: 2.7266
+[Step: 60] Iteration loss: 2.7242
+[Step: 61] Iteration loss: 2.7157
+[Step: 62] Iteration loss: 2.7349
+[Step: 63] Iteration loss: 2.6875
+[Step: 64] Iteration loss: 2.6939
+[Step: 65] Iteration loss: 2.6966
+[Step: 66] Iteration loss: 2.6902
+[Step: 67] Iteration loss: 2.6822
+[Step: 68] Iteration loss: 2.6673
+[Step: 69] Iteration loss: 2.6746
+[Step: 70] Iteration loss: 2.6707
+[Step: 71] Iteration loss: 2.6742
+[Step: 72] Iteration loss: 2.6827
+[Step: 73] Iteration loss: 2.6768
+[Step: 74] Iteration loss: 2.6544
+[Step: 75] Iteration loss: 2.6257
+[Step: 76] Iteration loss: 2.6321
+[Step: 77] Iteration loss: 2.6244
+[Step: 78] Iteration loss: 2.6327
+[Step: 79] Iteration loss: 2.6205
+[Step: 80] Iteration loss: 2.6137
+[Step: 81] Iteration loss: 2.6167
+[Step: 82] Iteration loss: 2.6303
+[Step: 83] Iteration loss: 2.5963
+[Step: 84] Iteration loss: 2.6127
+[Step: 85] Iteration loss: 2.5809
+[Step: 86] Iteration loss: 2.6094
+[Step: 87] Iteration loss: 2.5740
+[Step: 88] Iteration loss: 2.6098
+[Step: 89] Iteration loss: 2.6093
+[Step: 90] Iteration loss: 2.5925
+[Step: 91] Iteration loss: 2.5779
+[Step: 92] Iteration loss: 2.5768
+>>>> [Epoch: 0] Avg. loss: 2.8005 | Mean IoU: 0.0247
+FINISH

@@ -1,0 +1,293 @@
+Your NetID is: zs1542
+Your environment is: py38
+start training
+
+Loading dataset...
+
+Selected dataset: cityscapes
+Dataset directory: /scratch/zs1542/CV_baseline
+Save directory: 
+Number of classes to predict: 20
+Train dataset size: 2975
+Validation dataset size: 500
+
+Training...
+
+
+>>>> [Epoch: 0] Training
+>>>> [Epoch: 0] Avg. loss: 2.8518 | Mean IoU: 0.0224
+
+Saved model to /scratch/zs1542/CV-FinalProject/CVFramework/checkpoints/FlatWhite_0.pth.
+
+>>>> [Epoch: 1] Training
+>>>> [Epoch: 1] Avg. loss: 2.4506 | Mean IoU: 0.0245
+
+Saved model to /scratch/zs1542/CV-FinalProject/CVFramework/checkpoints/FlatWhite_1.pth.
+
+>>>> [Epoch: 2] Training
+>>>> [Epoch: 2] Avg. loss: 2.1421 | Mean IoU: 0.0300
+
+Saved model to /scratch/zs1542/CV-FinalProject/CVFramework/checkpoints/FlatWhite_2.pth.
+
+>>>> [Epoch: 3] Training
+>>>> [Epoch: 3] Avg. loss: 1.8700 | Mean IoU: 0.0471
+
+Saved model to /scratch/zs1542/CV-FinalProject/CVFramework/checkpoints/FlatWhite_3.pth.
+
+>>>> [Epoch: 4] Training
+>>>> [Epoch: 4] Avg. loss: 1.6997 | Mean IoU: 0.0513
+
+Saved model to /scratch/zs1542/CV-FinalProject/CVFramework/checkpoints/FlatWhite_4.pth.
+
+>>>> [Epoch: 5] Training
+>>>> [Epoch: 5] Avg. loss: 1.5956 | Mean IoU: 0.0524
+
+Saved model to /scratch/zs1542/CV-FinalProject/CVFramework/checkpoints/FlatWhite_5.pth.
+
+>>>> [Epoch: 6] Training
+>>>> [Epoch: 6] Avg. loss: 1.5275 | Mean IoU: 0.0532
+
+Saved model to /scratch/zs1542/CV-FinalProject/CVFramework/checkpoints/FlatWhite_6.pth.
+
+>>>> [Epoch: 7] Training
+>>>> [Epoch: 7] Avg. loss: 1.4776 | Mean IoU: 0.0550
+
+Saved model to /scratch/zs1542/CV-FinalProject/CVFramework/checkpoints/FlatWhite_7.pth.
+
+>>>> [Epoch: 8] Training
+>>>> [Epoch: 8] Avg. loss: 1.4372 | Mean IoU: 0.0587
+
+Saved model to /scratch/zs1542/CV-FinalProject/CVFramework/checkpoints/FlatWhite_8.pth.
+
+>>>> [Epoch: 9] Training
+>>>> [Epoch: 9] Avg. loss: 1.4032 | Mean IoU: 0.0635
+>>>> [Epoch: 9] Validation
+[Step: 0] Iteration loss: 1.4007
+[Step: 1] Iteration loss: 1.3477
+[Step: 2] Iteration loss: 1.4500
+[Step: 3] Iteration loss: 1.4395
+[Step: 4] Iteration loss: 1.3629
+[Step: 5] Iteration loss: 1.3574
+[Step: 6] Iteration loss: 1.3144
+[Step: 7] Iteration loss: 1.3738
+[Step: 8] Iteration loss: 1.2908
+[Step: 9] Iteration loss: 1.2614
+[Step: 10] Iteration loss: 1.2649
+[Step: 11] Iteration loss: 1.1990
+[Step: 12] Iteration loss: 1.3111
+[Step: 13] Iteration loss: 1.3331
+[Step: 14] Iteration loss: 1.4162
+[Step: 15] Iteration loss: 1.7350
+>>>> [Epoch: 9] Avg. loss: 1.3661 | Mean IoU: 0.0650
+unlabeled: 0.1327
+road: 0.6975
+sidewalk: 0.0000
+building: 0.3896
+wall: 0.0000
+fence: 0.0000
+pole: 0.0000
+traffic_light: 0.0000
+traffic_sign: 0.0000
+vegetation: 0.0105
+terrain: 0.0000
+sky: 0.0000
+person: 0.0000
+rider: 0.0000
+car: 0.0690
+truck: 0.0000
+bus: 0.0000
+train: 0.0000
+motorcycle: 0.0000
+bicycle: 0.0000
+
+Best model thus far. 
+
+Best miou 0.06496505352854473
+
+Saved model to /scratch/zs1542/CV-FinalProject/CVFramework/checkpoints/FlatWhite_9.pth.
+
+>>>> [Epoch: 10] Training
+>>>> [Epoch: 10] Avg. loss: 1.3748 | Mean IoU: 0.0679
+
+Saved model to /scratch/zs1542/CV-FinalProject/CVFramework/checkpoints/FlatWhite_10.pth.
+
+>>>> [Epoch: 11] Training
+>>>> [Epoch: 11] Avg. loss: 1.3479 | Mean IoU: 0.0719
+
+Saved model to /scratch/zs1542/CV-FinalProject/CVFramework/checkpoints/FlatWhite_11.pth.
+
+>>>> [Epoch: 12] Training
+>>>> [Epoch: 12] Avg. loss: 1.3264 | Mean IoU: 0.0759
+
+Saved model to /scratch/zs1542/CV-FinalProject/CVFramework/checkpoints/FlatWhite_12.pth.
+
+>>>> [Epoch: 13] Training
+>>>> [Epoch: 13] Avg. loss: 1.3081 | Mean IoU: 0.0799
+
+Saved model to /scratch/zs1542/CV-FinalProject/CVFramework/checkpoints/FlatWhite_13.pth.
+
+>>>> [Epoch: 14] Training
+>>>> [Epoch: 14] Avg. loss: 1.2892 | Mean IoU: 0.0834
+
+Saved model to /scratch/zs1542/CV-FinalProject/CVFramework/checkpoints/FlatWhite_14.pth.
+
+>>>> [Epoch: 15] Training
+>>>> [Epoch: 15] Avg. loss: 1.2705 | Mean IoU: 0.0868
+
+Saved model to /scratch/zs1542/CV-FinalProject/CVFramework/checkpoints/FlatWhite_15.pth.
+
+>>>> [Epoch: 16] Training
+>>>> [Epoch: 16] Avg. loss: 1.2563 | Mean IoU: 0.0888
+
+Saved model to /scratch/zs1542/CV-FinalProject/CVFramework/checkpoints/FlatWhite_16.pth.
+
+>>>> [Epoch: 17] Training
+>>>> [Epoch: 17] Avg. loss: 1.2389 | Mean IoU: 0.0911
+
+Saved model to /scratch/zs1542/CV-FinalProject/CVFramework/checkpoints/FlatWhite_17.pth.
+
+>>>> [Epoch: 18] Training
+>>>> [Epoch: 18] Avg. loss: 1.2246 | Mean IoU: 0.0934
+
+Saved model to /scratch/zs1542/CV-FinalProject/CVFramework/checkpoints/FlatWhite_18.pth.
+
+>>>> [Epoch: 19] Training
+>>>> [Epoch: 19] Avg. loss: 1.2100 | Mean IoU: 0.0956
+>>>> [Epoch: 19] Validation
+[Step: 0] Iteration loss: 1.1806
+[Step: 1] Iteration loss: 1.1398
+[Step: 2] Iteration loss: 1.2518
+[Step: 3] Iteration loss: 1.2305
+[Step: 4] Iteration loss: 1.1452
+[Step: 5] Iteration loss: 1.1312
+[Step: 6] Iteration loss: 1.0850
+[Step: 7] Iteration loss: 1.1393
+[Step: 8] Iteration loss: 1.0895
+[Step: 9] Iteration loss: 1.0958
+[Step: 10] Iteration loss: 1.0777
+[Step: 11] Iteration loss: 1.0017
+[Step: 12] Iteration loss: 1.1615
+[Step: 13] Iteration loss: 1.1578
+[Step: 14] Iteration loss: 1.3105
+[Step: 15] Iteration loss: 1.7227
+>>>> [Epoch: 19] Avg. loss: 1.1825 | Mean IoU: 0.1009
+unlabeled: 0.4552
+road: 0.7817
+sidewalk: 0.0015
+building: 0.4257
+wall: 0.0000
+fence: 0.0000
+pole: 0.0000
+traffic_light: 0.0000
+traffic_sign: 0.0000
+vegetation: 0.0278
+terrain: 0.0000
+sky: 0.0000
+person: 0.0000
+rider: 0.0000
+car: 0.3271
+truck: 0.0000
+bus: 0.0000
+train: 0.0000
+motorcycle: 0.0000
+bicycle: 0.0000
+
+Best model thus far. 
+
+Best miou 0.10094876699002361
+
+Saved model to /scratch/zs1542/CV-FinalProject/CVFramework/checkpoints/FlatWhite_19.pth.
+
+>>>> [Epoch: 20] Training
+>>>> [Epoch: 20] Avg. loss: 1.1975 | Mean IoU: 0.0978
+
+Saved model to /scratch/zs1542/CV-FinalProject/CVFramework/checkpoints/FlatWhite_20.pth.
+
+>>>> [Epoch: 21] Training
+>>>> [Epoch: 21] Avg. loss: 1.1821 | Mean IoU: 0.1009
+
+Saved model to /scratch/zs1542/CV-FinalProject/CVFramework/checkpoints/FlatWhite_21.pth.
+
+>>>> [Epoch: 22] Training
+>>>> [Epoch: 22] Avg. loss: 1.1679 | Mean IoU: 0.1035
+
+Saved model to /scratch/zs1542/CV-FinalProject/CVFramework/checkpoints/FlatWhite_22.pth.
+
+>>>> [Epoch: 23] Training
+>>>> [Epoch: 23] Avg. loss: 1.1552 | Mean IoU: 0.1085
+
+Saved model to /scratch/zs1542/CV-FinalProject/CVFramework/checkpoints/FlatWhite_23.pth.
+
+>>>> [Epoch: 24] Training
+>>>> [Epoch: 24] Avg. loss: 1.1400 | Mean IoU: 0.1137
+
+Saved model to /scratch/zs1542/CV-FinalProject/CVFramework/checkpoints/FlatWhite_24.pth.
+
+>>>> [Epoch: 25] Training
+>>>> [Epoch: 25] Avg. loss: 1.1253 | Mean IoU: 0.1204
+
+Saved model to /scratch/zs1542/CV-FinalProject/CVFramework/checkpoints/FlatWhite_25.pth.
+
+>>>> [Epoch: 26] Training
+>>>> [Epoch: 26] Avg. loss: 1.1083 | Mean IoU: 0.1254
+
+Saved model to /scratch/zs1542/CV-FinalProject/CVFramework/checkpoints/FlatWhite_26.pth.
+
+>>>> [Epoch: 27] Training
+>>>> [Epoch: 27] Avg. loss: 1.0933 | Mean IoU: 0.1305
+
+Saved model to /scratch/zs1542/CV-FinalProject/CVFramework/checkpoints/FlatWhite_27.pth.
+
+>>>> [Epoch: 28] Training
+>>>> [Epoch: 28] Avg. loss: 1.0794 | Mean IoU: 0.1333
+
+Saved model to /scratch/zs1542/CV-FinalProject/CVFramework/checkpoints/FlatWhite_28.pth.
+
+>>>> [Epoch: 29] Training
+>>>> [Epoch: 29] Avg. loss: 1.0602 | Mean IoU: 0.1360
+>>>> [Epoch: 29] Validation
+[Step: 0] Iteration loss: 1.0725
+[Step: 1] Iteration loss: 1.0316
+[Step: 2] Iteration loss: 1.1607
+[Step: 3] Iteration loss: 1.0944
+[Step: 4] Iteration loss: 1.0245
+[Step: 5] Iteration loss: 1.0502
+[Step: 6] Iteration loss: 0.9873
+[Step: 7] Iteration loss: 1.0176
+[Step: 8] Iteration loss: 0.9137
+[Step: 9] Iteration loss: 0.9078
+[Step: 10] Iteration loss: 0.8984
+[Step: 11] Iteration loss: 0.8234
+[Step: 12] Iteration loss: 1.0078
+[Step: 13] Iteration loss: 0.9809
+[Step: 14] Iteration loss: 1.1672
+[Step: 15] Iteration loss: 1.5755
+>>>> [Epoch: 29] Avg. loss: 1.0446 | Mean IoU: 0.1447
+unlabeled: 0.5318
+road: 0.7933
+sidewalk: 0.0646
+building: 0.5937
+wall: 0.0000
+fence: 0.0000
+pole: 0.0000
+traffic_light: 0.0000
+traffic_sign: 0.0000
+vegetation: 0.5535
+terrain: 0.0000
+sky: 0.0000
+person: 0.0000
+rider: 0.0000
+car: 0.3571
+truck: 0.0000
+bus: 0.0000
+train: 0.0000
+motorcycle: 0.0000
+bicycle: 0.0000
+
+Best model thus far. 
+
+Best miou 0.1447081582014136
+
+Saved model to /scratch/zs1542/CV-FinalProject/CVFramework/checkpoints/FlatWhite_29.pth.
+
+FINISH

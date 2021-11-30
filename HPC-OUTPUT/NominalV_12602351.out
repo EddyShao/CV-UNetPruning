@@ -1,0 +1,19 @@
+Your NetID is: zs1542
+Your environment is: py38
+start training
+
+Loading dataset...
+
+Selected dataset: cityscapes
+Dataset directory: /scratch/zs1542/CV_baseline
+Save directory: 
+Number of classes to predict: 20
+Train dataset size: 2975
+Validation dataset size: 500
+
+Training...
+
+
+>>>> [Epoch: 0] Training
+>>>> [Epoch: 0] Avg. loss: 2.8917 | Mean IoU: 0.0226
+FINISH
