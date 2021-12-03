@@ -101,16 +101,14 @@ train_args = {
     "model": ENet,
     "learning_rate": 0.01,
     "resume": False,
-    "save_dir": "/scratch/zs1542/CV-FinalProject/CVFramework/checkpoints/",
+    "save_dir":"", 
     "epochs": 30,
-    "report_step":10,
-    "save_filename": "FlatWhite"
+    "report_step":10}
 
-}
-
-def train(train_loader, val_loader, class_encoding, device=None):
+def train(train_loader, val_loader, class_encoding, device=torch.device("cuda")):
     print("\nTraining...\n")
     device = torch.device("cuda")
+    # device = torch.device("cuda")
 
     num_classes = len(class_encoding)
 
@@ -157,7 +155,7 @@ def train(train_loader, val_loader, class_encoding, device=None):
         if (epoch + 1) % train_args["report_step"] == 0 or epoch + 1 == train_args["epochs"]:
             print(">>>> [Epoch: {0:d}] Validation".format(epoch))
 
-            loss, (iou, miou) = val.run_epoch(True)
+            loss, (iou, miou) = val.run_epoch(False)
 
             print(">>>> [Epoch: {0:d}] Avg. loss: {1:.4f} | Mean IoU: {2:.4f}".
                   format(epoch, loss, miou))

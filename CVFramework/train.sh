@@ -1,9 +1,9 @@
 #!/bin/bash
-#SBATCH --job-name=pnv
+#SBATCH --job-name=NominalVoltage
 #SBATCH --nodes=1
 #SBATCH --cpus-per-task=8
 #SBATCH --mem=32GB
-#SBATCH --time=8:00:00
+#SBATCH --time=20:00:00
 #SBATCH --mail-type=END
 #SBATCH --mail-user=zs1542@nyu.edu # put your email here if you want emails
 #SBATCH --output=NominalV_%j.out
@@ -23,4 +23,3 @@ cd /scratch/zs1542/CV-FinalProject/CVFramework
 python main.py
 
 echo "FINISH"
-echo "Have a Nice Day"
