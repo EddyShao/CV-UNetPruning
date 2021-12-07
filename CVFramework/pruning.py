@@ -18,6 +18,10 @@ from data.cityscapes import Cityscapes
 from train import Train
 from test import Test
 
+from nni.algorithms.compression.pytorch.pruning import LevelPruner, SlimPruner, FPGMPruner, L1FilterPruner, \
+    L2FilterPruner, ActivationMeanRankFilterPruner, ActivationAPoZRankFilterPruner, \
+    TaylorFOWeightFilterPruner
+
 dataset_args = {
     "dataset": "cityscapes",
     "dataset_dir": "/scratch/qz1086/CV_baseline",
@@ -141,6 +145,17 @@ def train(train_loader, val_loader, class_encoding, device=None):
     start_epoch = 0
     best_miou = 0
 
+    # start===========================================================
+    # set the pruner
+    config_list = [{ 
+        'sparsity': 0.5,
+        'op_types': ['Conv2d']
+    }]
+
+    pruner = ActivationMeanRankFilterPruner(model, config_list,optimizer = optimizer)
+    pruner.compress()
+    # end===========================================================
+
     # Start Training
     print()
     train = Train(model, train_loader, optimizer, criterion, metric, device)
@@ -150,6 +165,10 @@ def train(train_loader, val_loader, class_encoding, device=None):
 
         epoch_loss, (iou, miou) = train.run_epoch(False)
         # lr_updater.step()
+    
+        # start===========================================================
+        pruner.update_epoch(epoch)
+        # end===========================================================
 
         print(">>>> [Epoch: {0:d}] Avg. loss: {1:.4f} | Mean IoU: {2:.4f}".
               format(epoch, epoch_loss, miou))
@@ -175,6 +194,10 @@ def train(train_loader, val_loader, class_encoding, device=None):
         model_file = train_args["save_dir"] + train_args["save_filename"] + "_" + str(epoch) + '.pth'
         torch.save(model.state_dict(), model_file)
         print('\nSaved model to ' + model_file + '.'+"\n")
+
+        # start===========================================================
+        pruner.export_model("./save_pruner/pruned_model.pt","./save_pruner/pruned_mask.pt")
+        # start===========================================================
 
     return model
 
