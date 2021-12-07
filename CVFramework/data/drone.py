@@ -16,12 +16,13 @@ import pandas as pd
 import numpy as np
 import matplotlib.pyplot as plt
 
-IMAGE_PATH = 'drone_dataset/images'
-MASK_PATH = 'drone_dataset/dataset/label_processed'
+IMAGE_PATH = '/scratch/qz1086/drone_dataset/images'
+MASK_PATH = '/scratch/qz1086/drone_dataset/dataset/label_processed'
 
 # Drone Dataset:
 mean=[0.485, 0.456, 0.406]
 std=[0.229, 0.224, 0.225]
+
 class DroneDataset(Dataset):
 
     def __init__(self, img_path, mask_path, X, mean, std, transform=None):

@@ -1,5 +1,5 @@
 #!/bin/bash
-#SBATCH --job-name=unet_bseline
+#SBATCH --job-name=unet_baseline
 #SBATCH --nodes=1
 #SBATCH --cpus-per-task=8
 #SBATCH --mem=32GB
@@ -14,9 +14,10 @@ module purge
 module load anaconda3/2020.07
 
 echo "start training"
-source activate /scratch/qz1086/.penv
+cd /scratch/qz1086/
+source activate ./penv
 
-cd /scratch/zs1542/CV-FinalProject/CVFramework
+cd /scratch/qz1086/CV-FinalProject/CVFramework
 python main.py
 
 echo "FINISH"

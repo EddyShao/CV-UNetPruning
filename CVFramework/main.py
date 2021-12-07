@@ -20,7 +20,7 @@ from test import Test
 
 dataset_args = {
     "dataset": "cityscapes",
-    "dataset_dir": "/scratch/qz1086/CV_baseline",
+    "dataset_dir": "/scratch/qz1086/cityscapes",
     "save_dir": "",
     "height": 320,
     "width": 480,
