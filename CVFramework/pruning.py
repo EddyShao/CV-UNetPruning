@@ -102,7 +102,7 @@ train_args = {
     "learning_rate": 0.01,
     "resume": False,
     "save_dir": "/scratch/qz1086/CV-FinalProject/CVFramework/checkpoints/",
-    "epochs": 60,
+    "epochs": 30,
     "report_step":10,
     "save_filename": "ENet"
 
