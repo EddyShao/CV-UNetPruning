@@ -7,18 +7,14 @@ from torch.utils.data import Dataset, DataLoader
 from torchvision import transforms as T
 import torch.nn.functional as F
 
-# import tensorflow as tf
-import segmentation_models_pytorch as smp
 
-# for image augmentation
-import albumentations as A
 
 from sklearn.model_selection import train_test_split
 
 from PIL import Image
 import cv2
 
-from unet import UNet
+# import two dataset class
 from dataset import DroneDataset, DroneTestDataset
 
 import pandas as pd
