@@ -64,24 +64,6 @@ class DroneDataset(Dataset):
         return img, mask
 
 
-class DroneTestDataset(Dataset):
-
-    def __init__(self, img_path, mask_path, X):
-        self.img_path = img_path
-        self.mask_path = mask_path
-        self.X = X
-
-    def __len__(self):
-        return len(self.X)
-
-    def __getitem__(self, idx):
-        img = cv2.imread(self.img_path + self.X[idx] + '.jpg')
-        img = cv2.cvtColor(img, cv2.COLOR_BGR2RGB)
-        mask = cv2.imread(self.mask_path + '0' + self.X[idx] + '.png', cv2.IMREAD_GRAYSCALE)
-
-        mask = torch.from_numpy(mask).long()
-
-        return img, mask
 
 # create df with id of the dataset
 def create_df(path):
