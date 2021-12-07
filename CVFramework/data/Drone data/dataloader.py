@@ -7,7 +7,10 @@ import torch.nn.functional as F
 from torch.utils.data import Dataset, DataLoader
 from PIL import Image
 import cv2
-
+#
+# Drone Dataset:
+# mean=[0.485, 0.456, 0.406]
+# std=[0.229, 0.224, 0.225]
 class DroneDataset(Dataset):
 
     def __init__(self, img_path, mask_path, X, mean, std, transform=None):
