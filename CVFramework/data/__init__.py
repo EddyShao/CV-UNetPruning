@@ -1,3 +1,3 @@
 from .cityscapes import Cityscapes
-
-__all__ = ['Cityscapes']
+from .drone import DroneDataset
+__all__ = ['Cityscapes', 'DroneDataset']
