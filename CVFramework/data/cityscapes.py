@@ -230,7 +230,7 @@ if __name__ == "__main__":
     ])
 
     train_set = Cityscapes(
-        root_dir="/scratch/zs1542/CV_baseline",
+        root_dir="/scratch/qz1086/CV_baseline",
         transform=image_transform,
         label_transform=label_transform
     ) 

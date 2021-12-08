@@ -16,6 +16,7 @@ import pandas as pd
 import numpy as np
 import matplotlib.pyplot as plt
 
+# change your own image_path and mask_path
 IMAGE_PATH = '/scratch/qz1086/drone_dataset/images'
 MASK_PATH = '/scratch/qz1086/drone_dataset/dataset/label_processed'
 
@@ -112,7 +113,7 @@ if __name__ == "__main__":
     train_set = DroneDataset(IMAGE_PATH, MASK_PATH, X_train, mean, std)
     val_set = DroneDataset(IMAGE_PATH, MASK_PATH, X_val, mean, std)
     # load data--->define batch size
-    batch_size = 3
+    batch_size = 32
 
     train_loader = DataLoader(train_set, 
                               batch_size=batch_size, 
