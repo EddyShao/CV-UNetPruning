@@ -24,6 +24,7 @@ MASK_PATH = '/scratch/qz1086/drone_dataset/dataset/label_processed'
 mean=[0.485, 0.456, 0.406]
 std=[0.229, 0.224, 0.225]
 
+
 class DroneDataset(Dataset):
 
     def __init__(self, 
@@ -49,6 +50,36 @@ class DroneDataset(Dataset):
         self.transform = transform
         self.mean = mean
         self.std = std
+
+
+    # Default encoding for pixel value, class name, and class color
+    color_encoding = OrderedDict([
+            ('unlabeled', (0, 0, 0)),
+            ('paved-area', (128, 64, 128)),
+            ('dirt', (130, 76, 0)),
+            ('grass', (0, 102, 0)),
+            ('gravel', (112,  103,  87)),
+            ('water', (28,	42,	168)),
+            ('rocks', (48,	41,	30)),
+            ('pool', (0,  50,  89)),
+            ('vegetation', (107, 142, 35)),
+            ('roof', (70, 70, 70)),
+            ('wall', (102,102, 156)),
+            ('window', (254,  228,	12)),
+            ('door', (254,	148,  12)),
+            ('fence', (190,	153, 153)),
+            ('fence-pole', (153, 153, 153)),
+            ('person', (255, 22, 96)),
+            ('dog', (102, 51, 0)),
+            ('car', (9,	143, 150)),
+            ('bicycle', (119, 11, 32)),
+            ('tree', (51, 51, 0)),
+            ('bald-tree', (190, 250, 190)),
+            ('ar-marker', (112, 150, 146)),
+            ('obstacle', (2, 135, 115)),
+            ('conflicting', (255, 0, 0))
+    ])  
+
 
     def __len__(self):
         return len(self.X)

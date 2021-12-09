@@ -13,7 +13,7 @@ import transforms as ext_transforms
 from models.simpleUnet import UNet
 from metric.iou import IoU
 import utils
-from data.drone import DroneDataset
+from data.drone import DroneDataset, IMAGE_PATH, MASK_PATH
 
 from train import Train
 from test import Test
@@ -30,8 +30,8 @@ def load_dataset(dataset):
     print("\nLoading dataset...\n")
 
     print("Selected dataset:", dataset_args["dataset"])
-    print("Dataset directory:", dataset_args["dataset_dir"])
-    print("Save directory:", dataset_args["save_dir"])
+    # print("Dataset directory:", dataset_args["dataset_dir"])
+    # print("Save directory:", dataset_args["save_dir"])
 
 
     # Get selected dataset
@@ -82,8 +82,6 @@ def load_dataset(dataset):
                                 atch_size=batch_size, 
                                 shuffle=True,
                                 num_workers=dataset_args["workers"])
-
-
 
 
     # Get encoding between pixel valus in label images and RGB colors
@@ -184,7 +182,7 @@ def train(train_loader, val_loader, class_encoding, device=None):
 
 
 
-(train_loader, val_loader, test_loader), class_encoding = load_dataset(Cityscapes)
+(train_loader, val_loader, test_loader), class_encoding = load_dataset(DroneDataset)
 
 
 train(train_loader, val_loader, class_encoding)
