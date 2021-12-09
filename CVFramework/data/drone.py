@@ -4,6 +4,7 @@ import time
 import torch
 import torch.nn as nn
 from torch.utils.data import Dataset, DataLoader
+from collections import OrderedDict
 from torchvision import transforms as T
 import torch.nn.functional as F
 
@@ -17,8 +18,8 @@ import numpy as np
 import matplotlib.pyplot as plt
 
 # change your own image_path and mask_path
-IMAGE_PATH = '/scratch/qz1086/drone_dataset/images'
-MASK_PATH = '/scratch/qz1086/drone_dataset/dataset/label_processed'
+IMAGE_PATH = '/scratch/qz1086/drone_dataset/images/'
+MASK_PATH = '/scratch/qz1086/drone_dataset/dataset/label_processed/'
 
 # Drone Dataset:
 mean=[0.485, 0.456, 0.406]
@@ -28,21 +29,14 @@ std=[0.229, 0.224, 0.225]
 class DroneDataset(Dataset):
 
     def __init__(self, 
-                 root_dir,
-                 mode='train',
                  img_path, 
                  mask_path, 
                  X, 
                  mean, 
                  std, 
+                 mode='train',
                  transform=None):
 
-        if root_dir[-1] != "/":
-            root_dir += "/"
-        elif root_dir[0] != "/":
-            root_dir = "/" + root_dir
-
-        self.root_dir = root_dir
         self.mode = mode
         self.img_path = img_path
         self.mask_path = mask_path
@@ -87,7 +81,7 @@ class DroneDataset(Dataset):
     def __getitem__(self, i):
         img = cv2.imread(self.img_path + self.X[i] + '.jpg')
         img = cv2.cvtColor(img, cv2.COLOR_BGR2RGB)
-        mask = cv2.imread(self.mask_path + '0' + self.X[i] + '.png', cv2.IMREAD_GRAYSCALE)
+        mask = cv2.imread(self.mask_path + "{:03d}".format(int(self.X[i])) + '.png', cv2.IMREAD_GRAYSCALE)
 
         # how to transform?
         if self.transform:
@@ -153,5 +147,9 @@ if __name__ == "__main__":
                             batch_size=batch_size, 
                             shuffle=True)
 
-
     
+    for i, batch in enumerate(dataloader):
+        print(batch)
+        break
+    
+

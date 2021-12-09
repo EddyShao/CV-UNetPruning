@@ -1,4 +1,5 @@
 import os
+import time
 
 import torch
 import torch.nn as nn
@@ -7,16 +8,29 @@ import torch.optim.lr_scheduler as lr_scheduler
 import torch.utils.data as data
 import torchvision.transforms as transforms
 
+
+import pandas as pd
+import numpy as np
+import matplotlib.pyplot as plt
+from sklearn.model_selection import train_test_split
 from PIL import Image
+import cv2
 
 import transforms as ext_transforms
 from models.simpleUnet import UNet
 from metric.iou import IoU
 import utils
-from data.drone import DroneDataset, IMAGE_PATH, MASK_PATH
+from data.drone import DroneDataset, IMAGE_PATH, MASK_PATH, mean, std
 
 from train import Train
 from test import Test
+
+from torch.utils.data import Dataset, DataLoader
+from torchvision import transforms as T
+import torch.nn.functional as F
+
+
+
 
 dataset_args = {
     "dataset": "drone",
@@ -79,7 +93,7 @@ def load_dataset(dataset):
                                 num_workers=dataset_args["workers"])
    # Load the test set as tensors
     test_loader = data.DataLoader(test_set, 
-                                atch_size=batch_size, 
+                                batch_size=batch_size, 
                                 shuffle=True,
                                 num_workers=dataset_args["workers"])
 
@@ -112,12 +126,12 @@ train_args = {
 
 def train(train_loader, val_loader, class_encoding, device=None):
     print("\nTraining...\n")
-    device = torch.device("cuda")
+    device = torch.device('cuda' if torch.cuda.is_available() else 'cpu')
 
     num_classes = len(class_encoding)
 
     # Intialize model
-    model = train_args["model"].to(device)
+    model = train_args["model"]().to(device)
     # Check if the network architecture is correct
     # Omit this process for now, as the model is too bigggggg
     # print(model)
