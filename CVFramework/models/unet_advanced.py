@@ -24,7 +24,6 @@ def MiOU(pred_mask, mask, smooth=1e-10, n_classes=23):
         pred_mask = torch.argmax(pred_mask, dim=1)
         pred_mask = pred_mask.contiguous().view(-1)
         mask = mask.contiguous().view(-1)
-
         iou_per_class = []
         
         for clas in range(0, n_classes): #loop per pixel class
