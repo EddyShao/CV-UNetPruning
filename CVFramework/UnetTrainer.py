@@ -7,7 +7,7 @@ from metric.unetMetrics import pixel_accuracy, MiOU
 
 
 
-def fit(epochs, model, train_loader, val_loader, criterion, optimizer, scheduler,  batch_size, n_class, device, save_dir):
+def fit(epochs, model, train_loader, val_loader, criterion, optimizer, scheduler,  batch_size, n_class, device, save_dir, file_name="Unet"):
     torch.cuda.empty_cache()
     train_losses = []
     val_losses = []
@@ -117,7 +117,7 @@ def fit(epochs, model, train_loader, val_loader, criterion, optimizer, scheduler
                     "Val Acc:{:.3f}..".format(this_val_accuracy),
                     "Time: {:.2f}m".format((time.time()-begin_timer)/60))
 
-                model_file = save_dir + "Unet_" + str(epoch) + '.pth'
+                model_file = save_dir + file_name + "_" + str(epoch) + '.pth'
                 torch.save(model.state_dict(), model_file)
                 print('\nSaved model to ' + model_file + '.'+"\n")
 
