@@ -1,0 +1,230 @@
+Your NetID is: zs1542
+Your environment is: py38
+start working
+Mission: Pruning encoder and decoder seperately, sparsity 50%
+We are using the state dict from
+ /scratch/zs1542/CV-FinalProject/CVFramework/checkpoints_1211_0/Unet_28.pth
+Prune the ENCODER only...
+Encoder pruning
+ amount: 0 - 1 
+method: Global Unstructured L1
+Density in Conv2d(3, 64, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1)) : 100.00%
+Density in Conv2d(64, 64, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1)) : 100.00%
+Density in Conv2d(64, 128, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1)) : 100.00%
+Density in Conv2d(128, 128, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1)) : 100.00%
+Density in Conv2d(128, 256, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1)) : 100.00%
+Density in Conv2d(256, 256, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1)) : 100.00%
+Density in Conv2d(256, 512, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1)) : 100.00%
+Density in Conv2d(512, 512, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1)) : 100.00%
+tensor(0.6667, device='cuda:0')
+0.17117908479458463
+Density in Conv2d(3, 64, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1)) : 98.26%
+Density in Conv2d(64, 64, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1)) : 94.54%
+Density in Conv2d(64, 128, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1)) : 94.77%
+Density in Conv2d(128, 128, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1)) : 92.44%
+Density in Conv2d(128, 256, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1)) : 92.58%
+Density in Conv2d(256, 256, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1)) : 89.32%
+Density in Conv2d(256, 512, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1)) : 89.27%
+Density in Conv2d(512, 512, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1)) : 84.87%
+tensor(0.6667, device='cuda:0')
+0.1773071320732328
+Density in Conv2d(3, 64, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1)) : 95.89%
+Density in Conv2d(64, 64, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1)) : 85.14%
+Density in Conv2d(64, 128, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1)) : 85.46%
+Density in Conv2d(128, 128, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1)) : 79.24%
+Density in Conv2d(128, 256, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1)) : 79.29%
+Density in Conv2d(256, 256, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1)) : 70.63%
+Density in Conv2d(256, 512, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1)) : 70.54%
+Density in Conv2d(512, 512, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1)) : 58.41%
+tensor(0.6667, device='cuda:0')
+0.16773927326169064
+Density in Conv2d(3, 64, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1)) : 93.81%
+Density in Conv2d(64, 64, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1)) : 74.72%
+Density in Conv2d(64, 128, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1)) : 74.84%
+Density in Conv2d(128, 128, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1)) : 64.27%
+Density in Conv2d(128, 256, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1)) : 64.35%
+Density in Conv2d(256, 256, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1)) : 49.64%
+Density in Conv2d(256, 512, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1)) : 49.50%
+Density in Conv2d(512, 512, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1)) : 28.63%
+tensor(0.6667, device='cuda:0')
+0.1738449169329477
+Density in Conv2d(3, 64, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1)) : 91.90%
+Density in Conv2d(64, 64, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1)) : 65.90%
+Density in Conv2d(64, 128, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1)) : 66.04%
+Density in Conv2d(128, 128, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1)) : 51.89%
+Density in Conv2d(128, 256, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1)) : 51.82%
+Density in Conv2d(256, 256, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1)) : 32.08%
+Density in Conv2d(256, 512, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1)) : 31.96%
+Density in Conv2d(512, 512, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1)) : 3.83%
+tensor(0.6667, device='cuda:0')
+0.1694910336532078
+Density in Conv2d(3, 64, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1)) : 90.16%
+Density in Conv2d(64, 64, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1)) : 54.01%
+Density in Conv2d(64, 128, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1)) : 54.21%
+Density in Conv2d(128, 128, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1)) : 35.08%
+Density in Conv2d(128, 256, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1)) : 34.91%
+Density in Conv2d(256, 256, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1)) : 8.14%
+Density in Conv2d(256, 512, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1)) : 8.14%
+Density in Conv2d(512, 512, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1)) : 0.00%
+tensor(0.6667, device='cuda:0')
+0.1750161872267135
+Density in Conv2d(3, 64, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1)) : 86.28%
+Density in Conv2d(64, 64, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1)) : 36.92%
+Density in Conv2d(64, 128, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1)) : 37.23%
+Density in Conv2d(128, 128, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1)) : 10.74%
+Density in Conv2d(128, 256, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1)) : 10.73%
+Density in Conv2d(256, 256, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1)) : 0.00%
+Density in Conv2d(256, 512, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1)) : 0.00%
+Density in Conv2d(512, 512, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1)) : 0.00%
+tensor(0.6667, device='cuda:0')
+0.17184477717660568
+Density in Conv2d(3, 64, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1)) : 80.67%
+Density in Conv2d(64, 64, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1)) : 8.66%
+Density in Conv2d(64, 128, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1)) : 9.05%
+Density in Conv2d(128, 128, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1)) : 0.00%
+Density in Conv2d(128, 256, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1)) : 0.00%
+Density in Conv2d(256, 256, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1)) : 0.00%
+Density in Conv2d(256, 512, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1)) : 0.00%
+Density in Conv2d(512, 512, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1)) : 0.00%
+tensor(0.6667, device='cuda:0')
+0.17062802847934755
+Density in Conv2d(3, 64, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1)) : 0.00%
+Density in Conv2d(64, 64, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1)) : 0.00%
+Density in Conv2d(64, 128, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1)) : 0.00%
+Density in Conv2d(128, 128, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1)) : 0.00%
+Density in Conv2d(128, 256, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1)) : 0.00%
+Density in Conv2d(256, 256, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1)) : 0.00%
+Density in Conv2d(256, 512, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1)) : 0.00%
+Density in Conv2d(512, 512, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1)) : 0.00%
+tensor(0.6667, device='cuda:0')
+0.17849734179572752
+{0.0: (tensor(0.6667, device='cuda:0'), 0.17117908479458463), 0.125: (tensor(0.6667, device='cuda:0'), 0.1773071320732328), 0.25: (tensor(0.6667, device='cuda:0'), 0.16773927326169064), 0.375: (tensor(0.6667, device='cuda:0'), 0.1738449169329477), 0.5: (tensor(0.6667, device='cuda:0'), 0.1694910336532078), 0.625: (tensor(0.6667, device='cuda:0'), 0.1750161872267135), 0.75: (tensor(0.6667, device='cuda:0'), 0.17184477717660568), 0.875: (tensor(0.6667, device='cuda:0'), 0.17062802847934755), 1.0: (tensor(0.6667, device='cuda:0'), 0.17849734179572752)}
+Prune the DECODER only...
+Density in ConvTranspose2d(128, 64, kernel_size=(2, 2), stride=(2, 2)) : 100.00%
+Density in ConvTranspose2d(256, 128, kernel_size=(2, 2), stride=(2, 2)) : 100.00%
+Density in ConvTranspose2d(512, 256, kernel_size=(2, 2), stride=(2, 2)) : 100.00%
+Density in ConvTranspose2d(1024, 512, kernel_size=(2, 2), stride=(2, 2)) : 100.00%
+Density in Conv2d(128, 64, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1)) : 100.00%
+Density in Conv2d(64, 64, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1)) : 100.00%
+Density in Conv2d(256, 128, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1)) : 100.00%
+Density in Conv2d(128, 128, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1)) : 100.00%
+Density in Conv2d(512, 256, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1)) : 100.00%
+Density in Conv2d(256, 256, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1)) : 100.00%
+Density in Conv2d(1024, 512, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1)) : 100.00%
+Density in Conv2d(512, 512, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1)) : 100.00%
+tensor(0.6667, device='cuda:0')
+0.17357169076953233
+Density in ConvTranspose2d(128, 64, kernel_size=(2, 2), stride=(2, 2)) : 96.44%
+Density in ConvTranspose2d(256, 128, kernel_size=(2, 2), stride=(2, 2)) : 94.92%
+Density in ConvTranspose2d(512, 256, kernel_size=(2, 2), stride=(2, 2)) : 92.86%
+Density in ConvTranspose2d(1024, 512, kernel_size=(2, 2), stride=(2, 2)) : 90.72%
+Density in Conv2d(128, 64, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1)) : 94.74%
+Density in Conv2d(64, 64, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1)) : 95.18%
+Density in Conv2d(256, 128, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1)) : 91.77%
+Density in Conv2d(128, 128, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1)) : 92.53%
+Density in Conv2d(512, 256, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1)) : 88.94%
+Density in Conv2d(256, 256, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1)) : 90.22%
+Density in Conv2d(1024, 512, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1)) : 84.79%
+Density in Conv2d(512, 512, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1)) : 85.75%
+tensor(0.6667, device='cuda:0')
+0.1682541635483238
+Density in ConvTranspose2d(128, 64, kernel_size=(2, 2), stride=(2, 2)) : 89.69%
+Density in ConvTranspose2d(256, 128, kernel_size=(2, 2), stride=(2, 2)) : 85.78%
+Density in ConvTranspose2d(512, 256, kernel_size=(2, 2), stride=(2, 2)) : 80.18%
+Density in ConvTranspose2d(1024, 512, kernel_size=(2, 2), stride=(2, 2)) : 74.53%
+Density in Conv2d(128, 64, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1)) : 85.62%
+Density in Conv2d(64, 64, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1)) : 86.25%
+Density in Conv2d(256, 128, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1)) : 77.10%
+Density in Conv2d(128, 128, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1)) : 79.42%
+Density in Conv2d(512, 256, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1)) : 69.63%
+Density in Conv2d(256, 256, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1)) : 72.81%
+Density in Conv2d(1024, 512, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1)) : 58.44%
+Density in Conv2d(512, 512, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1)) : 60.34%
+tensor(0.6667, device='cuda:0')
+0.17553635754032806
+Density in ConvTranspose2d(128, 64, kernel_size=(2, 2), stride=(2, 2)) : 81.17%
+Density in ConvTranspose2d(256, 128, kernel_size=(2, 2), stride=(2, 2)) : 74.15%
+Density in ConvTranspose2d(512, 256, kernel_size=(2, 2), stride=(2, 2)) : 63.95%
+Density in ConvTranspose2d(1024, 512, kernel_size=(2, 2), stride=(2, 2)) : 54.29%
+Density in Conv2d(128, 64, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1)) : 74.02%
+Density in Conv2d(64, 64, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1)) : 75.29%
+Density in Conv2d(256, 128, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1)) : 58.73%
+Density in Conv2d(128, 128, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1)) : 62.96%
+Density in Conv2d(512, 256, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1)) : 46.39%
+Density in Conv2d(256, 256, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1)) : 50.82%
+Density in Conv2d(1024, 512, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1)) : 31.26%
+Density in Conv2d(512, 512, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1)) : 30.93%
+tensor(0.6667, device='cuda:0')
+0.17525826083647297
+Density in ConvTranspose2d(128, 64, kernel_size=(2, 2), stride=(2, 2)) : 68.24%
+Density in ConvTranspose2d(256, 128, kernel_size=(2, 2), stride=(2, 2)) : 56.81%
+Density in ConvTranspose2d(512, 256, kernel_size=(2, 2), stride=(2, 2)) : 40.44%
+Density in ConvTranspose2d(1024, 512, kernel_size=(2, 2), stride=(2, 2)) : 26.44%
+Density in Conv2d(128, 64, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1)) : 57.34%
+Density in Conv2d(64, 64, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1)) : 58.84%
+Density in Conv2d(256, 128, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1)) : 34.79%
+Density in Conv2d(128, 128, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1)) : 39.80%
+Density in Conv2d(512, 256, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1)) : 23.99%
+Density in Conv2d(256, 256, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1)) : 22.40%
+Density in Conv2d(1024, 512, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1)) : 17.50%
+Density in Conv2d(512, 512, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1)) : 7.19%
+tensor(0.6667, device='cuda:0')
+0.1718571586046047
+Density in ConvTranspose2d(128, 64, kernel_size=(2, 2), stride=(2, 2)) : 49.80%
+Density in ConvTranspose2d(256, 128, kernel_size=(2, 2), stride=(2, 2)) : 32.95%
+Density in ConvTranspose2d(512, 256, kernel_size=(2, 2), stride=(2, 2)) : 12.05%
+Density in ConvTranspose2d(1024, 512, kernel_size=(2, 2), stride=(2, 2)) : 7.85%
+Density in Conv2d(128, 64, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1)) : 36.85%
+Density in Conv2d(64, 64, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1)) : 36.71%
+Density in Conv2d(256, 128, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1)) : 15.45%
+Density in Conv2d(128, 128, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1)) : 13.97%
+Density in Conv2d(512, 256, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1)) : 10.34%
+Density in Conv2d(256, 256, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1)) : 6.22%
+Density in Conv2d(1024, 512, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1)) : 7.33%
+Density in Conv2d(512, 512, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1)) : 1.63%
+tensor(0.6667, device='cuda:0')
+0.18168885656092587
+Density in ConvTranspose2d(128, 64, kernel_size=(2, 2), stride=(2, 2)) : 26.63%
+Density in ConvTranspose2d(256, 128, kernel_size=(2, 2), stride=(2, 2)) : 9.69%
+Density in ConvTranspose2d(512, 256, kernel_size=(2, 2), stride=(2, 2)) : 1.82%
+Density in ConvTranspose2d(1024, 512, kernel_size=(2, 2), stride=(2, 2)) : 0.96%
+Density in Conv2d(128, 64, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1)) : 18.87%
+Density in Conv2d(64, 64, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1)) : 15.80%
+Density in Conv2d(256, 128, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1)) : 5.15%
+Density in Conv2d(128, 128, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1)) : 2.98%
+Density in Conv2d(512, 256, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1)) : 3.18%
+Density in Conv2d(256, 256, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1)) : 1.28%
+Density in Conv2d(1024, 512, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1)) : 2.00%
+Density in Conv2d(512, 512, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1)) : 0.18%
+tensor(0.6667, device='cuda:0')
+0.17254507808530117
+Density in ConvTranspose2d(128, 64, kernel_size=(2, 2), stride=(2, 2)) : 4.71%
+Density in ConvTranspose2d(256, 128, kernel_size=(2, 2), stride=(2, 2)) : 1.26%
+Density in ConvTranspose2d(512, 256, kernel_size=(2, 2), stride=(2, 2)) : 0.13%
+Density in ConvTranspose2d(1024, 512, kernel_size=(2, 2), stride=(2, 2)) : 0.07%
+Density in Conv2d(128, 64, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1)) : 6.50%
+Density in Conv2d(64, 64, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1)) : 3.97%
+Density in Conv2d(256, 128, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1)) : 0.83%
+Density in Conv2d(128, 128, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1)) : 0.43%
+Density in Conv2d(512, 256, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1)) : 0.47%
+Density in Conv2d(256, 256, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1)) : 0.15%
+Density in Conv2d(1024, 512, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1)) : 0.17%
+Density in Conv2d(512, 512, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1)) : 0.01%
+tensor(0.6667, device='cuda:0')
+0.1710317678890084
+Density in ConvTranspose2d(128, 64, kernel_size=(2, 2), stride=(2, 2)) : 0.00%
+Density in ConvTranspose2d(256, 128, kernel_size=(2, 2), stride=(2, 2)) : 0.00%
+Density in ConvTranspose2d(512, 256, kernel_size=(2, 2), stride=(2, 2)) : 0.00%
+Density in ConvTranspose2d(1024, 512, kernel_size=(2, 2), stride=(2, 2)) : 0.00%
+Density in Conv2d(128, 64, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1)) : 0.00%
+Density in Conv2d(64, 64, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1)) : 0.00%
+Density in Conv2d(256, 128, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1)) : 0.00%
+Density in Conv2d(128, 128, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1)) : 0.00%
+Density in Conv2d(512, 256, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1)) : 0.00%
+Density in Conv2d(256, 256, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1)) : 0.00%
+Density in Conv2d(1024, 512, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1)) : 0.00%
+Density in Conv2d(512, 512, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1)) : 0.00%
+tensor(0.6667, device='cuda:0')
+0.1729235022039775
+{0.0: (tensor(0.6667, device='cuda:0'), 0.17357169076953233), 0.125: (tensor(0.6667, device='cuda:0'), 0.1682541635483238), 0.25: (tensor(0.6667, device='cuda:0'), 0.17553635754032806), 0.375: (tensor(0.6667, device='cuda:0'), 0.17525826083647297), 0.5: (tensor(0.6667, device='cuda:0'), 0.1718571586046047), 0.625: (tensor(0.6667, device='cuda:0'), 0.18168885656092587), 0.75: (tensor(0.6667, device='cuda:0'), 0.17254507808530117), 0.875: (tensor(0.6667, device='cuda:0'), 0.1710317678890084), 1.0: (tensor(0.6667, device='cuda:0'), 0.1729235022039775)}
+FINISH

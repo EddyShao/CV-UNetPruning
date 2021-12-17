@@ -1,0 +1,18 @@
+Traceback (most recent call last):
+  File "/scratch/zs1542/CV-FinalProject/CVFramework/prune.py", line 137, in <module>
+    pred = model(img)
+  File "/scratch/zs1542/envs/py38/lib/python3.9/site-packages/torch/nn/modules/module.py", line 1102, in _call_impl
+    return forward_call(*input, **kwargs)
+  File "/scratch/zs1542/CV-FinalProject/CVFramework/models/unet.py", line 38, in forward
+    t1 = self.double_conv1(t)
+  File "/scratch/zs1542/envs/py38/lib/python3.9/site-packages/torch/nn/modules/module.py", line 1102, in _call_impl
+    return forward_call(*input, **kwargs)
+  File "/scratch/zs1542/envs/py38/lib/python3.9/site-packages/torch/nn/modules/container.py", line 141, in forward
+    input = module(input)
+  File "/scratch/zs1542/envs/py38/lib/python3.9/site-packages/torch/nn/modules/module.py", line 1102, in _call_impl
+    return forward_call(*input, **kwargs)
+  File "/scratch/zs1542/envs/py38/lib/python3.9/site-packages/torch/nn/modules/conv.py", line 446, in forward
+    return self._conv_forward(input, self.weight, self.bias)
+  File "/scratch/zs1542/envs/py38/lib/python3.9/site-packages/torch/nn/modules/conv.py", line 442, in _conv_forward
+    return F.conv2d(input, weight, bias, self.stride,
+RuntimeError: Input type (torch.FloatTensor) and weight type (torch.cuda.FloatTensor) should be the same or input should be a MKLDNN tensor and weight is a dense tensor

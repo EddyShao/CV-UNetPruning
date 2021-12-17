@@ -1,0 +1,749 @@
+Your NetID is: zs1542
+Your environment is: py38
+start working
+Mission: Pruning encoder and decoder seperately
+We are using the state dict from
+ /scratch/zs1542/CV-FinalProject/CVFramework/checkpoints_1211_0/Unet_28.pth
+Prune the ENCODER only...
+Encoder pruning
+ amount: 0 - 1 
+method: Global Unstructured L1
+AMOUNT:  0.0
+Density in Conv2d(3, 64, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1)) : 100.00%
+Density in Conv2d(64, 64, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1)) : 100.00%
+Density in Conv2d(64, 128, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1)) : 100.00%
+Density in Conv2d(128, 128, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1)) : 100.00%
+Density in Conv2d(128, 256, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1)) : 100.00%
+Density in Conv2d(256, 256, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1)) : 100.00%
+Density in Conv2d(256, 512, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1)) : 100.00%
+Density in Conv2d(512, 512, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1)) : 100.00%
+loss:  1.0848797659079235
+acc:  tensor(0.6667, device='cuda:0')
+MIOU:  0.16136822783118165
+Duration:  3.349623441696167
+
+Saved model to /scratch/zs1542/CV-FinalProject/CVFramework/checkpoints/encoder_0.pth.
+
+AMOUNT:  0.05
+Density in Conv2d(3, 64, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1)) : 94.62%
+Density in Conv2d(64, 64, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1)) : 94.96%
+Density in Conv2d(64, 128, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1)) : 95.00%
+Density in Conv2d(128, 128, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1)) : 95.03%
+Density in Conv2d(128, 256, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1)) : 95.06%
+Density in Conv2d(256, 256, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1)) : 95.01%
+Density in Conv2d(256, 512, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1)) : 94.97%
+Density in Conv2d(512, 512, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1)) : 95.00%
+loss:  1.2347576022148132
+acc:  tensor(0.6040, device='cuda:0')
+MIOU:  0.13977443825643582
+Duration:  3.014940023422241
+
+Saved model to /scratch/zs1542/CV-FinalProject/CVFramework/checkpoints/encoder_5.pth.
+
+AMOUNT:  0.1
+Density in Conv2d(3, 64, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1)) : 89.53%
+Density in Conv2d(64, 64, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1)) : 89.96%
+Density in Conv2d(64, 128, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1)) : 89.84%
+Density in Conv2d(128, 128, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1)) : 89.93%
+Density in Conv2d(128, 256, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1)) : 90.05%
+Density in Conv2d(256, 256, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1)) : 90.02%
+Density in Conv2d(256, 512, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1)) : 90.04%
+Density in Conv2d(512, 512, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1)) : 89.98%
+loss:  1.5980687075191073
+acc:  tensor(0.5011, device='cuda:0')
+MIOU:  0.11046446860305732
+Duration:  3.0164918899536133
+
+Saved model to /scratch/zs1542/CV-FinalProject/CVFramework/checkpoints/encoder_10.pth.
+
+AMOUNT:  0.15000000000000002
+Density in Conv2d(3, 64, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1)) : 84.66%
+Density in Conv2d(64, 64, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1)) : 85.00%
+Density in Conv2d(64, 128, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1)) : 85.20%
+Density in Conv2d(128, 128, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1)) : 84.91%
+Density in Conv2d(128, 256, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1)) : 85.02%
+Density in Conv2d(256, 256, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1)) : 85.03%
+Density in Conv2d(256, 512, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1)) : 85.01%
+Density in Conv2d(512, 512, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1)) : 84.98%
+loss:  1.4678587781058416
+acc:  tensor(0.5375, device='cuda:0')
+MIOU:  0.10640296773115863
+Duration:  3.0073916912078857
+
+Saved model to /scratch/zs1542/CV-FinalProject/CVFramework/checkpoints/encoder_15.pth.
+
+AMOUNT:  0.2
+Density in Conv2d(3, 64, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1)) : 80.90%
+Density in Conv2d(64, 64, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1)) : 80.25%
+Density in Conv2d(64, 128, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1)) : 80.04%
+Density in Conv2d(128, 128, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1)) : 80.05%
+Density in Conv2d(128, 256, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1)) : 80.09%
+Density in Conv2d(256, 256, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1)) : 80.03%
+Density in Conv2d(256, 512, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1)) : 79.98%
+Density in Conv2d(512, 512, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1)) : 79.98%
+loss:  1.352486828962962
+acc:  tensor(0.5477, device='cuda:0')
+MIOU:  0.10661075490407673
+Duration:  3.004199743270874
+
+Saved model to /scratch/zs1542/CV-FinalProject/CVFramework/checkpoints/encoder_20.pth.
+
+AMOUNT:  0.25
+Density in Conv2d(3, 64, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1)) : 75.06%
+Density in Conv2d(64, 64, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1)) : 75.24%
+Density in Conv2d(64, 128, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1)) : 74.99%
+Density in Conv2d(128, 128, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1)) : 74.92%
+Density in Conv2d(128, 256, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1)) : 74.97%
+Density in Conv2d(256, 256, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1)) : 75.06%
+Density in Conv2d(256, 512, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1)) : 75.01%
+Density in Conv2d(512, 512, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1)) : 74.99%
+loss:  1.8157049881087408
+acc:  tensor(0.4339, device='cuda:0')
+MIOU:  0.08669666842162732
+Duration:  3.0034914016723633
+
+Saved model to /scratch/zs1542/CV-FinalProject/CVFramework/checkpoints/encoder_25.pth.
+
+AMOUNT:  0.30000000000000004
+Density in Conv2d(3, 64, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1)) : 70.37%
+Density in Conv2d(64, 64, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1)) : 70.29%
+Density in Conv2d(64, 128, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1)) : 70.00%
+Density in Conv2d(128, 128, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1)) : 70.05%
+Density in Conv2d(128, 256, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1)) : 70.13%
+Density in Conv2d(256, 256, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1)) : 69.95%
+Density in Conv2d(256, 512, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1)) : 69.99%
+Density in Conv2d(512, 512, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1)) : 70.00%
+loss:  1.8607247273127239
+acc:  tensor(0.3643, device='cuda:0')
+MIOU:  0.07107891382312921
+Duration:  3.018350839614868
+
+Saved model to /scratch/zs1542/CV-FinalProject/CVFramework/checkpoints/encoder_30.pth.
+
+AMOUNT:  0.35000000000000003
+Density in Conv2d(3, 64, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1)) : 65.39%
+Density in Conv2d(64, 64, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1)) : 65.46%
+Density in Conv2d(64, 128, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1)) : 65.22%
+Density in Conv2d(128, 128, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1)) : 64.94%
+Density in Conv2d(128, 256, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1)) : 65.17%
+Density in Conv2d(256, 256, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1)) : 64.89%
+Density in Conv2d(256, 512, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1)) : 65.06%
+Density in Conv2d(512, 512, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1)) : 64.97%
+loss:  1.7176094121403165
+acc:  tensor(0.4487, device='cuda:0')
+MIOU:  0.07391214994099331
+Duration:  3.0095114707946777
+
+Saved model to /scratch/zs1542/CV-FinalProject/CVFramework/checkpoints/encoder_35.pth.
+
+AMOUNT:  0.4
+Density in Conv2d(3, 64, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1)) : 57.99%
+Density in Conv2d(64, 64, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1)) : 59.89%
+Density in Conv2d(64, 128, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1)) : 60.14%
+Density in Conv2d(128, 128, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1)) : 60.12%
+Density in Conv2d(128, 256, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1)) : 60.08%
+Density in Conv2d(256, 256, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1)) : 60.02%
+Density in Conv2d(256, 512, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1)) : 60.01%
+Density in Conv2d(512, 512, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1)) : 59.97%
+loss:  2.131002379788293
+acc:  tensor(0.3200, device='cuda:0')
+MIOU:  0.05262472008586286
+Duration:  3.014953374862671
+
+Saved model to /scratch/zs1542/CV-FinalProject/CVFramework/checkpoints/encoder_40.pth.
+
+AMOUNT:  0.45
+Density in Conv2d(3, 64, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1)) : 56.77%
+Density in Conv2d(64, 64, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1)) : 54.83%
+Density in Conv2d(64, 128, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1)) : 55.06%
+Density in Conv2d(128, 128, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1)) : 54.67%
+Density in Conv2d(128, 256, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1)) : 54.94%
+Density in Conv2d(256, 256, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1)) : 55.00%
+Density in Conv2d(256, 512, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1)) : 54.96%
+Density in Conv2d(512, 512, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1)) : 55.05%
+loss:  2.0753223299980164
+acc:  tensor(0.3280, device='cuda:0')
+MIOU:  0.059950352233931956
+Duration:  3.0129809379577637
+
+Saved model to /scratch/zs1542/CV-FinalProject/CVFramework/checkpoints/encoder_45.pth.
+
+AMOUNT:  0.5
+Density in Conv2d(3, 64, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1)) : 53.59%
+Density in Conv2d(64, 64, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1)) : 49.88%
+Density in Conv2d(64, 128, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1)) : 49.69%
+Density in Conv2d(128, 128, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1)) : 50.07%
+Density in Conv2d(128, 256, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1)) : 50.01%
+Density in Conv2d(256, 256, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1)) : 49.92%
+Density in Conv2d(256, 512, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1)) : 50.03%
+Density in Conv2d(512, 512, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1)) : 50.01%
+loss:  2.882750325732761
+acc:  tensor(0.2653, device='cuda:0')
+MIOU:  0.046458040441482246
+Duration:  3.019270181655884
+
+Saved model to /scratch/zs1542/CV-FinalProject/CVFramework/checkpoints/encoder_50.pth.
+
+AMOUNT:  0.55
+Density in Conv2d(3, 64, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1)) : 44.91%
+Density in Conv2d(64, 64, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1)) : 45.29%
+Density in Conv2d(64, 128, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1)) : 45.13%
+Density in Conv2d(128, 128, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1)) : 44.97%
+Density in Conv2d(128, 256, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1)) : 45.01%
+Density in Conv2d(256, 256, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1)) : 45.03%
+Density in Conv2d(256, 512, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1)) : 44.97%
+Density in Conv2d(512, 512, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1)) : 45.00%
+loss:  2.1716255810525684
+acc:  tensor(0.3360, device='cuda:0')
+MIOU:  0.04794818260155014
+Duration:  3.015720844268799
+
+Saved model to /scratch/zs1542/CV-FinalProject/CVFramework/checkpoints/encoder_55.pth.
+
+AMOUNT:  0.6000000000000001
+Density in Conv2d(3, 64, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1)) : 38.95%
+Density in Conv2d(64, 64, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1)) : 40.25%
+Density in Conv2d(64, 128, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1)) : 39.98%
+Density in Conv2d(128, 128, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1)) : 39.99%
+Density in Conv2d(128, 256, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1)) : 40.00%
+Density in Conv2d(256, 256, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1)) : 39.98%
+Density in Conv2d(256, 512, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1)) : 39.99%
+Density in Conv2d(512, 512, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1)) : 40.01%
+loss:  1.9117482238345676
+acc:  tensor(0.4749, device='cuda:0')
+MIOU:  0.050544852719534
+Duration:  3.017489194869995
+
+Saved model to /scratch/zs1542/CV-FinalProject/CVFramework/checkpoints/encoder_60.pth.
+
+AMOUNT:  0.65
+Density in Conv2d(3, 64, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1)) : 34.38%
+Density in Conv2d(64, 64, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1)) : 34.86%
+Density in Conv2d(64, 128, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1)) : 34.97%
+Density in Conv2d(128, 128, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1)) : 35.07%
+Density in Conv2d(128, 256, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1)) : 34.89%
+Density in Conv2d(256, 256, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1)) : 34.99%
+Density in Conv2d(256, 512, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1)) : 35.04%
+Density in Conv2d(512, 512, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1)) : 35.00%
+loss:  2.189078801208072
+acc:  tensor(0.2951, device='cuda:0')
+MIOU:  0.04463125608992031
+Duration:  3.0144054889678955
+
+Saved model to /scratch/zs1542/CV-FinalProject/CVFramework/checkpoints/encoder_65.pth.
+
+AMOUNT:  0.7000000000000001
+Density in Conv2d(3, 64, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1)) : 27.37%
+Density in Conv2d(64, 64, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1)) : 29.93%
+Density in Conv2d(64, 128, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1)) : 30.03%
+Density in Conv2d(128, 128, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1)) : 30.24%
+Density in Conv2d(128, 256, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1)) : 29.98%
+Density in Conv2d(256, 256, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1)) : 30.06%
+Density in Conv2d(256, 512, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1)) : 29.96%
+Density in Conv2d(512, 512, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1)) : 29.99%
+loss:  2.607876439889272
+acc:  tensor(0.2265, device='cuda:0')
+MIOU:  0.02048727596206345
+Duration:  3.0156381130218506
+
+Saved model to /scratch/zs1542/CV-FinalProject/CVFramework/checkpoints/encoder_70.pth.
+
+AMOUNT:  0.75
+Density in Conv2d(3, 64, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1)) : 24.77%
+Density in Conv2d(64, 64, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1)) : 25.05%
+Density in Conv2d(64, 128, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1)) : 24.82%
+Density in Conv2d(128, 128, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1)) : 24.99%
+Density in Conv2d(128, 256, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1)) : 25.03%
+Density in Conv2d(256, 256, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1)) : 25.04%
+Density in Conv2d(256, 512, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1)) : 25.02%
+Density in Conv2d(512, 512, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1)) : 24.98%
+loss:  2.406579295794169
+acc:  tensor(0.2523, device='cuda:0')
+MIOU:  0.02577379073633853
+Duration:  3.0189950466156006
+
+Saved model to /scratch/zs1542/CV-FinalProject/CVFramework/checkpoints/encoder_75.pth.
+
+AMOUNT:  0.8
+Density in Conv2d(3, 64, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1)) : 21.47%
+Density in Conv2d(64, 64, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1)) : 20.29%
+Density in Conv2d(64, 128, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1)) : 20.14%
+Density in Conv2d(128, 128, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1)) : 19.95%
+Density in Conv2d(128, 256, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1)) : 20.07%
+Density in Conv2d(256, 256, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1)) : 20.04%
+Density in Conv2d(256, 512, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1)) : 19.99%
+Density in Conv2d(512, 512, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1)) : 19.98%
+loss:  2.1879224247402616
+acc:  tensor(0.4359, device='cuda:0')
+MIOU:  0.041472802144368624
+Duration:  3.01591420173645
+
+Saved model to /scratch/zs1542/CV-FinalProject/CVFramework/checkpoints/encoder_80.pth.
+
+AMOUNT:  0.8500000000000001
+Density in Conv2d(3, 64, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1)) : 14.64%
+Density in Conv2d(64, 64, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1)) : 14.82%
+Density in Conv2d(64, 128, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1)) : 15.03%
+Density in Conv2d(128, 128, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1)) : 14.95%
+Density in Conv2d(128, 256, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1)) : 15.00%
+Density in Conv2d(256, 256, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1)) : 14.97%
+Density in Conv2d(256, 512, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1)) : 15.04%
+Density in Conv2d(512, 512, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1)) : 14.99%
+loss:  2.2150285177760654
+acc:  tensor(0.4098, device='cuda:0')
+MIOU:  0.03655527380675079
+Duration:  3.027667760848999
+
+Saved model to /scratch/zs1542/CV-FinalProject/CVFramework/checkpoints/encoder_85.pth.
+
+AMOUNT:  0.9
+Density in Conv2d(3, 64, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1)) : 8.28%
+Density in Conv2d(64, 64, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1)) : 10.15%
+Density in Conv2d(64, 128, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1)) : 10.02%
+Density in Conv2d(128, 128, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1)) : 10.08%
+Density in Conv2d(128, 256, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1)) : 9.96%
+Density in Conv2d(256, 256, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1)) : 10.03%
+Density in Conv2d(256, 512, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1)) : 9.98%
+Density in Conv2d(512, 512, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1)) : 10.00%
+loss:  2.177816006872389
+acc:  tensor(0.3888, device='cuda:0')
+MIOU:  0.03279345820178431
+Duration:  3.0275328159332275
+
+Saved model to /scratch/zs1542/CV-FinalProject/CVFramework/checkpoints/encoder_90.pth.
+
+AMOUNT:  0.9500000000000001
+Density in Conv2d(3, 64, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1)) : 5.38%
+Density in Conv2d(64, 64, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1)) : 4.84%
+Density in Conv2d(64, 128, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1)) : 5.07%
+Density in Conv2d(128, 128, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1)) : 5.17%
+Density in Conv2d(128, 256, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1)) : 4.99%
+Density in Conv2d(256, 256, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1)) : 5.01%
+Density in Conv2d(256, 512, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1)) : 5.01%
+Density in Conv2d(512, 512, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1)) : 4.99%
+loss:  2.22951422797309
+acc:  tensor(0.4036, device='cuda:0')
+MIOU:  0.03125586668409216
+Duration:  3.020038604736328
+
+Saved model to /scratch/zs1542/CV-FinalProject/CVFramework/checkpoints/encoder_95.pth.
+
+AMOUNT:  1.0
+Density in Conv2d(3, 64, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1)) : 0.00%
+Density in Conv2d(64, 64, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1)) : 0.00%
+Density in Conv2d(64, 128, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1)) : 0.00%
+Density in Conv2d(128, 128, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1)) : 0.00%
+Density in Conv2d(128, 256, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1)) : 0.00%
+Density in Conv2d(256, 256, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1)) : 0.00%
+Density in Conv2d(256, 512, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1)) : 0.00%
+Density in Conv2d(512, 512, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1)) : 0.00%
+loss:  2.2906051609251232
+acc:  tensor(0.4012, device='cuda:0')
+MIOU:  0.022557443878863673
+Duration:  3.001638889312744
+
+Saved model to /scratch/zs1542/CV-FinalProject/CVFramework/checkpoints/encoder_100.pth.
+
+{0.0: (1.0848797659079235, tensor(0.6667, device='cuda:0'), 0.16136822783118165, 3.349623441696167), 0.05: (1.2347576022148132, tensor(0.6040, device='cuda:0'), 0.13977443825643582, 3.014940023422241), 0.1: (1.5980687075191073, tensor(0.5011, device='cuda:0'), 0.11046446860305732, 3.0164918899536133), 0.15000000000000002: (1.4678587781058416, tensor(0.5375, device='cuda:0'), 0.10640296773115863, 3.0073916912078857), 0.2: (1.352486828962962, tensor(0.5477, device='cuda:0'), 0.10661075490407673, 3.004199743270874), 0.25: (1.8157049881087408, tensor(0.4339, device='cuda:0'), 0.08669666842162732, 3.0034914016723633), 0.30000000000000004: (1.8607247273127239, tensor(0.3643, device='cuda:0'), 0.07107891382312921, 3.018350839614868), 0.35000000000000003: (1.7176094121403165, tensor(0.4487, device='cuda:0'), 0.07391214994099331, 3.0095114707946777), 0.4: (2.131002379788293, tensor(0.3200, device='cuda:0'), 0.05262472008586286, 3.014953374862671), 0.45: (2.0753223299980164, tensor(0.3280, device='cuda:0'), 0.059950352233931956, 3.0129809379577637), 0.5: (2.882750325732761, tensor(0.2653, device='cuda:0'), 0.046458040441482246, 3.019270181655884), 0.55: (2.1716255810525684, tensor(0.3360, device='cuda:0'), 0.04794818260155014, 3.015720844268799), 0.6000000000000001: (1.9117482238345676, tensor(0.4749, device='cuda:0'), 0.050544852719534, 3.017489194869995), 0.65: (2.189078801208072, tensor(0.2951, device='cuda:0'), 0.04463125608992031, 3.0144054889678955), 0.7000000000000001: (2.607876439889272, tensor(0.2265, device='cuda:0'), 0.02048727596206345, 3.0156381130218506), 0.75: (2.406579295794169, tensor(0.2523, device='cuda:0'), 0.02577379073633853, 3.0189950466156006), 0.8: (2.1879224247402616, tensor(0.4359, device='cuda:0'), 0.041472802144368624, 3.01591420173645), 0.8500000000000001: (2.2150285177760654, tensor(0.4098, device='cuda:0'), 0.03655527380675079, 3.027667760848999), 0.9: (2.177816006872389, tensor(0.3888, device='cuda:0'), 0.03279345820178431, 3.0275328159332275), 0.9500000000000001: (2.22951422797309, tensor(0.4036, device='cuda:0'), 0.03125586668409216, 3.020038604736328), 1.0: (2.2906051609251232, tensor(0.4012, device='cuda:0'), 0.022557443878863673, 3.001638889312744)}
+Prune the DECODER only...
+Density in ConvTranspose2d(128, 64, kernel_size=(2, 2), stride=(2, 2)) : 100.00%
+Density in ConvTranspose2d(256, 128, kernel_size=(2, 2), stride=(2, 2)) : 100.00%
+Density in ConvTranspose2d(512, 256, kernel_size=(2, 2), stride=(2, 2)) : 100.00%
+Density in ConvTranspose2d(1024, 512, kernel_size=(2, 2), stride=(2, 2)) : 100.00%
+Density in Conv2d(128, 64, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1)) : 100.00%
+Density in Conv2d(64, 64, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1)) : 100.00%
+Density in Conv2d(256, 128, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1)) : 100.00%
+Density in Conv2d(128, 128, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1)) : 100.00%
+Density in Conv2d(512, 256, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1)) : 100.00%
+Density in Conv2d(256, 256, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1)) : 100.00%
+Density in Conv2d(1024, 512, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1)) : 100.00%
+Density in Conv2d(512, 512, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1)) : 100.00%
+loss:  1.0848797692192926
+acc:  0.6667152775658501
+MIOU:  0.1637188962698284
+Duration:  3.0313963890075684
+
+Saved model to /scratch/zs1542/CV-FinalProject/CVFramework/checkpoints/decoder_0.pth.
+
+Density in ConvTranspose2d(128, 64, kernel_size=(2, 2), stride=(2, 2)) : 94.88%
+Density in ConvTranspose2d(256, 128, kernel_size=(2, 2), stride=(2, 2)) : 95.11%
+Density in ConvTranspose2d(512, 256, kernel_size=(2, 2), stride=(2, 2)) : 95.02%
+Density in ConvTranspose2d(1024, 512, kernel_size=(2, 2), stride=(2, 2)) : 94.98%
+Density in Conv2d(128, 64, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1)) : 94.89%
+Density in Conv2d(64, 64, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1)) : 94.82%
+Density in Conv2d(256, 128, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1)) : 95.01%
+Density in Conv2d(128, 128, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1)) : 94.93%
+Density in Conv2d(512, 256, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1)) : 95.00%
+Density in Conv2d(256, 256, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1)) : 95.01%
+Density in Conv2d(1024, 512, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1)) : 94.99%
+Density in Conv2d(512, 512, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1)) : 95.03%
+loss:  1.0940658118989732
+acc:  0.6653628432088428
+MIOU:  0.16096330056765767
+Duration:  3.0242557525634766
+
+Saved model to /scratch/zs1542/CV-FinalProject/CVFramework/checkpoints/decoder_5.pth.
+
+Density in ConvTranspose2d(128, 64, kernel_size=(2, 2), stride=(2, 2)) : 90.25%
+Density in ConvTranspose2d(256, 128, kernel_size=(2, 2), stride=(2, 2)) : 89.96%
+Density in ConvTranspose2d(512, 256, kernel_size=(2, 2), stride=(2, 2)) : 90.02%
+Density in ConvTranspose2d(1024, 512, kernel_size=(2, 2), stride=(2, 2)) : 89.97%
+Density in Conv2d(128, 64, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1)) : 89.80%
+Density in Conv2d(64, 64, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1)) : 89.88%
+Density in Conv2d(256, 128, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1)) : 90.01%
+Density in Conv2d(128, 128, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1)) : 89.98%
+Density in Conv2d(512, 256, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1)) : 90.03%
+Density in Conv2d(256, 256, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1)) : 89.99%
+Density in Conv2d(1024, 512, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1)) : 90.00%
+Density in Conv2d(512, 512, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1)) : 90.02%
+loss:  1.1242190500100453
+acc:  0.6697801748911539
+MIOU:  0.16954306141821274
+Duration:  3.025128126144409
+
+Saved model to /scratch/zs1542/CV-FinalProject/CVFramework/checkpoints/decoder_10.pth.
+
+Density in ConvTranspose2d(128, 64, kernel_size=(2, 2), stride=(2, 2)) : 85.11%
+Density in ConvTranspose2d(256, 128, kernel_size=(2, 2), stride=(2, 2)) : 84.83%
+Density in ConvTranspose2d(512, 256, kernel_size=(2, 2), stride=(2, 2)) : 85.02%
+Density in ConvTranspose2d(1024, 512, kernel_size=(2, 2), stride=(2, 2)) : 85.03%
+Density in Conv2d(128, 64, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1)) : 84.91%
+Density in Conv2d(64, 64, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1)) : 84.49%
+Density in Conv2d(256, 128, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1)) : 84.93%
+Density in Conv2d(128, 128, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1)) : 85.07%
+Density in Conv2d(512, 256, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1)) : 84.97%
+Density in Conv2d(256, 256, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1)) : 84.97%
+Density in Conv2d(1024, 512, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1)) : 85.00%
+Density in Conv2d(512, 512, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1)) : 85.02%
+loss:  1.1530805428822835
+acc:  0.6634361942609152
+MIOU:  0.16362268263033275
+Duration:  3.026838541030884
+
+Saved model to /scratch/zs1542/CV-FinalProject/CVFramework/checkpoints/decoder_15.pth.
+
+Density in ConvTranspose2d(128, 64, kernel_size=(2, 2), stride=(2, 2)) : 80.14%
+Density in ConvTranspose2d(256, 128, kernel_size=(2, 2), stride=(2, 2)) : 80.12%
+Density in ConvTranspose2d(512, 256, kernel_size=(2, 2), stride=(2, 2)) : 79.99%
+Density in ConvTranspose2d(1024, 512, kernel_size=(2, 2), stride=(2, 2)) : 79.97%
+Density in Conv2d(128, 64, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1)) : 80.14%
+Density in Conv2d(64, 64, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1)) : 80.14%
+Density in Conv2d(256, 128, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1)) : 80.01%
+Density in Conv2d(128, 128, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1)) : 79.97%
+Density in Conv2d(512, 256, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1)) : 79.98%
+Density in Conv2d(256, 256, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1)) : 80.07%
+Density in Conv2d(1024, 512, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1)) : 80.01%
+Density in Conv2d(512, 512, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1)) : 79.99%
+loss:  1.2027395500077143
+acc:  0.6665154496828715
+MIOU:  0.16419159994023116
+Duration:  3.02248477935791
+
+Saved model to /scratch/zs1542/CV-FinalProject/CVFramework/checkpoints/decoder_20.pth.
+
+Density in ConvTranspose2d(128, 64, kernel_size=(2, 2), stride=(2, 2)) : 74.95%
+Density in ConvTranspose2d(256, 128, kernel_size=(2, 2), stride=(2, 2)) : 75.16%
+Density in ConvTranspose2d(512, 256, kernel_size=(2, 2), stride=(2, 2)) : 74.94%
+Density in ConvTranspose2d(1024, 512, kernel_size=(2, 2), stride=(2, 2)) : 74.94%
+Density in Conv2d(128, 64, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1)) : 75.00%
+Density in Conv2d(64, 64, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1)) : 75.00%
+Density in Conv2d(256, 128, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1)) : 74.91%
+Density in Conv2d(128, 128, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1)) : 75.04%
+Density in Conv2d(512, 256, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1)) : 75.05%
+Density in Conv2d(256, 256, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1)) : 74.99%
+Density in Conv2d(1024, 512, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1)) : 75.01%
+Density in Conv2d(512, 512, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1)) : 75.02%
+loss:  1.2897037400139704
+acc:  0.6667403744326698
+MIOU:  0.16237159320657996
+Duration:  3.0265464782714844
+
+Saved model to /scratch/zs1542/CV-FinalProject/CVFramework/checkpoints/decoder_25.pth.
+
+Density in ConvTranspose2d(128, 64, kernel_size=(2, 2), stride=(2, 2)) : 70.32%
+Density in ConvTranspose2d(256, 128, kernel_size=(2, 2), stride=(2, 2)) : 70.07%
+Density in ConvTranspose2d(512, 256, kernel_size=(2, 2), stride=(2, 2)) : 70.05%
+Density in ConvTranspose2d(1024, 512, kernel_size=(2, 2), stride=(2, 2)) : 69.96%
+Density in Conv2d(128, 64, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1)) : 70.12%
+Density in Conv2d(64, 64, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1)) : 69.98%
+Density in Conv2d(256, 128, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1)) : 69.96%
+Density in Conv2d(128, 128, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1)) : 69.84%
+Density in Conv2d(512, 256, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1)) : 70.02%
+Density in Conv2d(256, 256, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1)) : 70.08%
+Density in Conv2d(1024, 512, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1)) : 69.99%
+Density in Conv2d(512, 512, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1)) : 70.02%
+loss:  2.133028017150031
+acc:  0.23250443405575222
+MIOU:  0.06464293105296182
+Duration:  3.022487163543701
+
+Saved model to /scratch/zs1542/CV-FinalProject/CVFramework/checkpoints/decoder_30.pth.
+
+Density in ConvTranspose2d(128, 64, kernel_size=(2, 2), stride=(2, 2)) : 64.93%
+Density in ConvTranspose2d(256, 128, kernel_size=(2, 2), stride=(2, 2)) : 64.97%
+Density in ConvTranspose2d(512, 256, kernel_size=(2, 2), stride=(2, 2)) : 65.00%
+Density in ConvTranspose2d(1024, 512, kernel_size=(2, 2), stride=(2, 2)) : 64.95%
+Density in Conv2d(128, 64, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1)) : 64.93%
+Density in Conv2d(64, 64, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1)) : 64.65%
+Density in Conv2d(256, 128, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1)) : 64.90%
+Density in Conv2d(128, 128, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1)) : 65.31%
+Density in Conv2d(512, 256, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1)) : 65.02%
+Density in Conv2d(256, 256, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1)) : 65.02%
+Density in Conv2d(1024, 512, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1)) : 65.00%
+Density in Conv2d(512, 512, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1)) : 65.03%
+loss:  1.4967121084531148
+acc:  0.6602478524049123
+MIOU:  0.1538857305158715
+Duration:  3.0240983963012695
+
+Saved model to /scratch/zs1542/CV-FinalProject/CVFramework/checkpoints/decoder_35.pth.
+
+Density in ConvTranspose2d(128, 64, kernel_size=(2, 2), stride=(2, 2)) : 59.99%
+Density in ConvTranspose2d(256, 128, kernel_size=(2, 2), stride=(2, 2)) : 59.73%
+Density in ConvTranspose2d(512, 256, kernel_size=(2, 2), stride=(2, 2)) : 60.12%
+Density in ConvTranspose2d(1024, 512, kernel_size=(2, 2), stride=(2, 2)) : 60.01%
+Density in Conv2d(128, 64, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1)) : 60.02%
+Density in Conv2d(64, 64, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1)) : 59.90%
+Density in Conv2d(256, 128, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1)) : 59.94%
+Density in Conv2d(128, 128, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1)) : 59.87%
+Density in Conv2d(512, 256, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1)) : 59.99%
+Density in Conv2d(256, 256, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1)) : 60.03%
+Density in Conv2d(1024, 512, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1)) : 59.99%
+Density in Conv2d(512, 512, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1)) : 60.01%
+loss:  1.5897304217020671
+acc:  0.658998053934839
+MIOU:  0.15055248565368456
+Duration:  3.025735855102539
+
+Saved model to /scratch/zs1542/CV-FinalProject/CVFramework/checkpoints/decoder_40.pth.
+
+Density in ConvTranspose2d(128, 64, kernel_size=(2, 2), stride=(2, 2)) : 54.86%
+Density in ConvTranspose2d(256, 128, kernel_size=(2, 2), stride=(2, 2)) : 54.96%
+Density in ConvTranspose2d(512, 256, kernel_size=(2, 2), stride=(2, 2)) : 55.01%
+Density in ConvTranspose2d(1024, 512, kernel_size=(2, 2), stride=(2, 2)) : 55.02%
+Density in Conv2d(128, 64, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1)) : 54.76%
+Density in Conv2d(64, 64, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1)) : 55.12%
+Density in Conv2d(256, 128, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1)) : 54.97%
+Density in Conv2d(128, 128, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1)) : 55.33%
+Density in Conv2d(512, 256, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1)) : 54.99%
+Density in Conv2d(256, 256, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1)) : 54.92%
+Density in Conv2d(1024, 512, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1)) : 55.01%
+Density in Conv2d(512, 512, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1)) : 54.98%
+loss:  1.7252559264500935
+acc:  0.6655702094237009
+MIOU:  0.15784477287760568
+Duration:  3.0256974697113037
+
+Saved model to /scratch/zs1542/CV-FinalProject/CVFramework/checkpoints/decoder_45.pth.
+
+Density in ConvTranspose2d(128, 64, kernel_size=(2, 2), stride=(2, 2)) : 49.99%
+Density in ConvTranspose2d(256, 128, kernel_size=(2, 2), stride=(2, 2)) : 50.04%
+Density in ConvTranspose2d(512, 256, kernel_size=(2, 2), stride=(2, 2)) : 50.06%
+Density in ConvTranspose2d(1024, 512, kernel_size=(2, 2), stride=(2, 2)) : 50.00%
+Density in Conv2d(128, 64, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1)) : 50.01%
+Density in Conv2d(64, 64, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1)) : 50.56%
+Density in Conv2d(256, 128, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1)) : 49.84%
+Density in Conv2d(128, 128, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1)) : 49.94%
+Density in Conv2d(512, 256, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1)) : 50.02%
+Density in Conv2d(256, 256, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1)) : 50.16%
+Density in Conv2d(1024, 512, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1)) : 50.01%
+Density in Conv2d(512, 512, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1)) : 49.93%
+loss:  1.912239220407274
+acc:  0.6429561177889506
+MIOU:  0.147722392516507
+Duration:  3.0275185108184814
+
+Saved model to /scratch/zs1542/CV-FinalProject/CVFramework/checkpoints/decoder_50.pth.
+
+Density in ConvTranspose2d(128, 64, kernel_size=(2, 2), stride=(2, 2)) : 45.12%
+Density in ConvTranspose2d(256, 128, kernel_size=(2, 2), stride=(2, 2)) : 45.05%
+Density in ConvTranspose2d(512, 256, kernel_size=(2, 2), stride=(2, 2)) : 45.00%
+Density in ConvTranspose2d(1024, 512, kernel_size=(2, 2), stride=(2, 2)) : 44.98%
+Density in Conv2d(128, 64, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1)) : 45.23%
+Density in Conv2d(64, 64, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1)) : 45.03%
+Density in Conv2d(256, 128, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1)) : 45.02%
+Density in Conv2d(128, 128, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1)) : 44.70%
+Density in Conv2d(512, 256, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1)) : 45.01%
+Density in Conv2d(256, 256, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1)) : 44.96%
+Density in Conv2d(1024, 512, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1)) : 44.99%
+Density in Conv2d(512, 512, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1)) : 45.04%
+loss:  2.048916286892361
+acc:  0.6284162799517313
+MIOU:  0.14179670308427902
+Duration:  3.0256192684173584
+
+Saved model to /scratch/zs1542/CV-FinalProject/CVFramework/checkpoints/decoder_55.pth.
+
+Density in ConvTranspose2d(128, 64, kernel_size=(2, 2), stride=(2, 2)) : 39.65%
+Density in ConvTranspose2d(256, 128, kernel_size=(2, 2), stride=(2, 2)) : 40.11%
+Density in ConvTranspose2d(512, 256, kernel_size=(2, 2), stride=(2, 2)) : 40.03%
+Density in ConvTranspose2d(1024, 512, kernel_size=(2, 2), stride=(2, 2)) : 40.01%
+Density in Conv2d(128, 64, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1)) : 39.86%
+Density in Conv2d(64, 64, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1)) : 40.03%
+Density in Conv2d(256, 128, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1)) : 40.20%
+Density in Conv2d(128, 128, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1)) : 40.09%
+Density in Conv2d(512, 256, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1)) : 39.92%
+Density in Conv2d(256, 256, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1)) : 39.96%
+Density in Conv2d(1024, 512, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1)) : 40.00%
+Density in Conv2d(512, 512, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1)) : 40.00%
+loss:  2.199361973338657
+acc:  0.6398426095644633
+MIOU:  0.1394313271986759
+Duration:  3.034459114074707
+
+Saved model to /scratch/zs1542/CV-FinalProject/CVFramework/checkpoints/decoder_60.pth.
+
+Density in ConvTranspose2d(128, 64, kernel_size=(2, 2), stride=(2, 2)) : 34.79%
+Density in ConvTranspose2d(256, 128, kernel_size=(2, 2), stride=(2, 2)) : 35.01%
+Density in ConvTranspose2d(512, 256, kernel_size=(2, 2), stride=(2, 2)) : 35.01%
+Density in ConvTranspose2d(1024, 512, kernel_size=(2, 2), stride=(2, 2)) : 35.05%
+Density in Conv2d(128, 64, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1)) : 34.94%
+Density in Conv2d(64, 64, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1)) : 35.22%
+Density in Conv2d(256, 128, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1)) : 35.00%
+Density in Conv2d(128, 128, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1)) : 35.03%
+Density in Conv2d(512, 256, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1)) : 34.99%
+Density in Conv2d(256, 256, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1)) : 35.04%
+Density in Conv2d(1024, 512, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1)) : 34.97%
+Density in Conv2d(512, 512, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1)) : 35.01%
+loss:  2.365756180551317
+acc:  0.6094890203740861
+MIOU:  0.12071732176419883
+Duration:  3.0272326469421387
+
+Saved model to /scratch/zs1542/CV-FinalProject/CVFramework/checkpoints/decoder_65.pth.
+
+Density in ConvTranspose2d(128, 64, kernel_size=(2, 2), stride=(2, 2)) : 30.83%
+Density in ConvTranspose2d(256, 128, kernel_size=(2, 2), stride=(2, 2)) : 30.13%
+Density in ConvTranspose2d(512, 256, kernel_size=(2, 2), stride=(2, 2)) : 30.03%
+Density in ConvTranspose2d(1024, 512, kernel_size=(2, 2), stride=(2, 2)) : 30.00%
+Density in Conv2d(128, 64, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1)) : 29.95%
+Density in Conv2d(64, 64, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1)) : 30.02%
+Density in Conv2d(256, 128, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1)) : 29.97%
+Density in Conv2d(128, 128, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1)) : 30.12%
+Density in Conv2d(512, 256, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1)) : 30.02%
+Density in Conv2d(256, 256, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1)) : 30.04%
+Density in Conv2d(1024, 512, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1)) : 29.98%
+Density in Conv2d(512, 512, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1)) : 30.00%
+loss:  2.4694695605172052
+acc:  0.5799685451719496
+MIOU:  0.10623385342199947
+Duration:  3.028460741043091
+
+Saved model to /scratch/zs1542/CV-FinalProject/CVFramework/checkpoints/decoder_70.pth.
+
+Density in ConvTranspose2d(128, 64, kernel_size=(2, 2), stride=(2, 2)) : 24.59%
+Density in ConvTranspose2d(256, 128, kernel_size=(2, 2), stride=(2, 2)) : 24.74%
+Density in ConvTranspose2d(512, 256, kernel_size=(2, 2), stride=(2, 2)) : 25.04%
+Density in ConvTranspose2d(1024, 512, kernel_size=(2, 2), stride=(2, 2)) : 25.07%
+Density in Conv2d(128, 64, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1)) : 25.07%
+Density in Conv2d(64, 64, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1)) : 24.86%
+Density in Conv2d(256, 128, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1)) : 25.04%
+Density in Conv2d(128, 128, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1)) : 25.09%
+Density in Conv2d(512, 256, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1)) : 24.97%
+Density in Conv2d(256, 256, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1)) : 24.93%
+Density in Conv2d(1024, 512, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1)) : 25.00%
+Density in Conv2d(512, 512, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1)) : 24.97%
+loss:  2.660825570424398
+acc:  0.5824378795093961
+MIOU:  0.09924083738997982
+Duration:  3.018772840499878
+
+Saved model to /scratch/zs1542/CV-FinalProject/CVFramework/checkpoints/decoder_75.pth.
+
+Density in ConvTranspose2d(128, 64, kernel_size=(2, 2), stride=(2, 2)) : 20.18%
+Density in ConvTranspose2d(256, 128, kernel_size=(2, 2), stride=(2, 2)) : 20.24%
+Density in ConvTranspose2d(512, 256, kernel_size=(2, 2), stride=(2, 2)) : 19.98%
+Density in ConvTranspose2d(1024, 512, kernel_size=(2, 2), stride=(2, 2)) : 20.02%
+Density in Conv2d(128, 64, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1)) : 20.03%
+Density in Conv2d(64, 64, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1)) : 19.61%
+Density in Conv2d(256, 128, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1)) : 20.00%
+Density in Conv2d(128, 128, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1)) : 20.04%
+Density in Conv2d(512, 256, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1)) : 20.02%
+Density in Conv2d(256, 256, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1)) : 19.92%
+Density in Conv2d(1024, 512, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1)) : 19.99%
+Density in Conv2d(512, 512, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1)) : 20.00%
+loss:  2.798553188641866
+acc:  0.5310191942585839
+MIOU:  0.08472908472151774
+Duration:  3.0145328044891357
+
+Saved model to /scratch/zs1542/CV-FinalProject/CVFramework/checkpoints/decoder_80.pth.
+
+Density in ConvTranspose2d(128, 64, kernel_size=(2, 2), stride=(2, 2)) : 15.03%
+Density in ConvTranspose2d(256, 128, kernel_size=(2, 2), stride=(2, 2)) : 14.89%
+Density in ConvTranspose2d(512, 256, kernel_size=(2, 2), stride=(2, 2)) : 14.92%
+Density in ConvTranspose2d(1024, 512, kernel_size=(2, 2), stride=(2, 2)) : 14.99%
+Density in Conv2d(128, 64, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1)) : 15.01%
+Density in Conv2d(64, 64, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1)) : 15.02%
+Density in Conv2d(256, 128, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1)) : 14.97%
+Density in Conv2d(128, 128, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1)) : 14.92%
+Density in Conv2d(512, 256, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1)) : 14.96%
+Density in Conv2d(256, 256, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1)) : 15.03%
+Density in Conv2d(1024, 512, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1)) : 15.01%
+Density in Conv2d(512, 512, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1)) : 15.03%
+loss:  2.877220776345995
+acc:  0.4631872847676277
+MIOU:  0.049651455620698025
+Duration:  3.0221149921417236
+
+Saved model to /scratch/zs1542/CV-FinalProject/CVFramework/checkpoints/decoder_85.pth.
+
+Density in ConvTranspose2d(128, 64, kernel_size=(2, 2), stride=(2, 2)) : 10.10%
+Density in ConvTranspose2d(256, 128, kernel_size=(2, 2), stride=(2, 2)) : 10.05%
+Density in ConvTranspose2d(512, 256, kernel_size=(2, 2), stride=(2, 2)) : 10.05%
+Density in ConvTranspose2d(1024, 512, kernel_size=(2, 2), stride=(2, 2)) : 10.01%
+Density in Conv2d(128, 64, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1)) : 10.05%
+Density in Conv2d(64, 64, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1)) : 9.92%
+Density in Conv2d(256, 128, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1)) : 10.01%
+Density in Conv2d(128, 128, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1)) : 9.98%
+Density in Conv2d(512, 256, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1)) : 10.00%
+Density in Conv2d(256, 256, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1)) : 10.00%
+Density in Conv2d(1024, 512, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1)) : 10.00%
+Density in Conv2d(512, 512, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1)) : 9.97%
+loss:  2.9850583341386585
+acc:  0.4028232759899563
+MIOU:  0.026846229990968196
+Duration:  3.0159425735473633
+
+Saved model to /scratch/zs1542/CV-FinalProject/CVFramework/checkpoints/decoder_90.pth.
+
+Density in ConvTranspose2d(128, 64, kernel_size=(2, 2), stride=(2, 2)) : 5.11%
+Density in ConvTranspose2d(256, 128, kernel_size=(2, 2), stride=(2, 2)) : 5.03%
+Density in ConvTranspose2d(512, 256, kernel_size=(2, 2), stride=(2, 2)) : 5.03%
+Density in ConvTranspose2d(1024, 512, kernel_size=(2, 2), stride=(2, 2)) : 5.00%
+Density in Conv2d(128, 64, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1)) : 4.91%
+Density in Conv2d(64, 64, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1)) : 5.01%
+Density in Conv2d(256, 128, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1)) : 4.99%
+Density in Conv2d(128, 128, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1)) : 5.07%
+Density in Conv2d(512, 256, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1)) : 5.01%
+Density in Conv2d(256, 256, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1)) : 4.99%
+Density in Conv2d(1024, 512, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1)) : 4.99%
+Density in Conv2d(512, 512, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1)) : 5.01%
+loss:  3.0300579733318753
+acc:  0.4012260047925843
+MIOU:  0.023436244794814157
+Duration:  3.0071191787719727
+
+Saved model to /scratch/zs1542/CV-FinalProject/CVFramework/checkpoints/decoder_95.pth.
+
+Density in ConvTranspose2d(128, 64, kernel_size=(2, 2), stride=(2, 2)) : 0.00%
+Density in ConvTranspose2d(256, 128, kernel_size=(2, 2), stride=(2, 2)) : 0.00%
+Density in ConvTranspose2d(512, 256, kernel_size=(2, 2), stride=(2, 2)) : 0.00%
+Density in ConvTranspose2d(1024, 512, kernel_size=(2, 2), stride=(2, 2)) : 0.00%
+Density in Conv2d(128, 64, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1)) : 0.00%
+Density in Conv2d(64, 64, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1)) : 0.00%
+Density in Conv2d(256, 128, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1)) : 0.00%
+Density in Conv2d(128, 128, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1)) : 0.00%
+Density in Conv2d(512, 256, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1)) : 0.00%
+Density in Conv2d(256, 256, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1)) : 0.00%
+Density in Conv2d(1024, 512, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1)) : 0.00%
+Density in Conv2d(512, 512, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1)) : 0.00%
+loss:  3.060556279288398
+acc:  0.4012260014812152
+MIOU:  0.023724426734469402
+Duration:  3.0045862197875977
+
+Saved model to /scratch/zs1542/CV-FinalProject/CVFramework/checkpoints/decoder_100.pth.
+
+{0.0: (1.0848797692192926, 0.6667152775658501, 0.1637188962698284, 3.0313963890075684), 0.05: (1.0940658118989732, 0.6653628432088428, 0.16096330056765767, 3.0242557525634766), 0.1: (1.1242190500100453, 0.6697801748911539, 0.16954306141821274, 3.025128126144409), 0.15000000000000002: (1.1530805428822835, 0.6634361942609152, 0.16362268263033275, 3.026838541030884), 0.2: (1.2027395500077143, 0.6665154496828715, 0.16419159994023116, 3.02248477935791), 0.25: (1.2897037400139704, 0.6667403744326698, 0.16237159320657996, 3.0265464782714844), 0.30000000000000004: (2.133028017150031, 0.23250443405575222, 0.06464293105296182, 3.022487163543701), 0.35000000000000003: (1.4967121084531148, 0.6602478524049123, 0.1538857305158715, 3.0240983963012695), 0.4: (1.5897304217020671, 0.658998053934839, 0.15055248565368456, 3.025735855102539), 0.45: (1.7252559264500935, 0.6655702094237009, 0.15784477287760568, 3.0256974697113037), 0.5: (1.912239220407274, 0.6429561177889506, 0.147722392516507, 3.0275185108184814), 0.55: (2.048916286892361, 0.6284162799517313, 0.14179670308427902, 3.0256192684173584), 0.6000000000000001: (2.199361973338657, 0.6398426095644633, 0.1394313271986759, 3.034459114074707), 0.65: (2.365756180551317, 0.6094890203740861, 0.12071732176419883, 3.0272326469421387), 0.7000000000000001: (2.4694695605172052, 0.5799685451719496, 0.10623385342199947, 3.028460741043091), 0.75: (2.660825570424398, 0.5824378795093961, 0.09924083738997982, 3.018772840499878), 0.8: (2.798553188641866, 0.5310191942585839, 0.08472908472151774, 3.0145328044891357), 0.8500000000000001: (2.877220776345995, 0.4631872847676277, 0.049651455620698025, 3.0221149921417236), 0.9: (2.9850583341386585, 0.4028232759899563, 0.026846229990968196, 3.0159425735473633), 0.9500000000000001: (3.0300579733318753, 0.4012260047925843, 0.023436244794814157, 3.0071191787719727), 1.0: (3.060556279288398, 0.4012260014812152, 0.023724426734469402, 3.0045862197875977)}
+FINISH

@@ -1,0 +1,8 @@
+Traceback (most recent call last):
+  File "/scratch/zs1542/CV-FinalProject/CVFramework/prune.py", line 192, in <module>
+    model.load_state_dict(torch.load(state_dict_path, map_location=device))
+  File "/scratch/zs1542/envs/py38/lib/python3.9/site-packages/torch/nn/modules/module.py", line 1482, in load_state_dict
+    raise RuntimeError('Error(s) in loading state_dict for {}:\n\t{}'.format(
+RuntimeError: Error(s) in loading state_dict for UNet:
+	Missing key(s) in state_dict: "double_conv1.0.weight_orig", "double_conv1.0.weight_mask", "double_conv1.2.weight_orig", "double_conv1.2.weight_mask", "double_conv2.0.weight_orig", "double_conv2.0.weight_mask", "double_conv2.2.weight_orig", "double_conv2.2.weight_mask", "double_conv3.0.weight_orig", "double_conv3.0.weight_mask", "double_conv3.2.weight_orig", "double_conv3.2.weight_mask", "double_conv4.0.weight_orig", "double_conv4.0.weight_mask", "double_conv4.2.weight_orig", "double_conv4.2.weight_mask". 
+	Unexpected key(s) in state_dict: "double_conv1.0.weight", "double_conv1.2.weight", "double_conv2.0.weight", "double_conv2.2.weight", "double_conv3.0.weight", "double_conv3.2.weight", "double_conv4.0.weight", "double_conv4.2.weight". 

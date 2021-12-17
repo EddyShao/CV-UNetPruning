@@ -1,0 +1,306 @@
+Your NetID is: zs1542
+Your environment is: py38
+start working
+Mission: Pruning encoder and decoder seperately, sparsity 50%
+We are using the state dict from
+ /scratch/zs1542/CV-FinalProject/CVFramework/checkpoints_1211_0/Unet_28.pth
+Prune the ENCODER only...
+Encoder pruning
+ amount: 0.5
+method: Global Unstructured L1
+Re-train the pruned model(endcoder pruned)
+Loss Decreasing.. inf >> 2.178 
+Epoch:1/30.. Train Loss: 1.062.. Val Loss: 2.178.. Train mIoU:0.164.. Val mIoU: 0.173.. Train Acc:0.676.. Val Acc:0.666.. Time: 0.92m
+
+Saved model to /scratch/zs1542/CV-FinalProject/CVFramework/checkpoints/Unet_50_EP_0.pth.
+
+Loss Not Decrease for 1 time
+Epoch:2/30.. Train Loss: 1.065.. Val Loss: 2.198.. Train mIoU:0.165.. Val mIoU: 0.179.. Train Acc:0.676.. Val Acc:0.666.. Time: 0.79m
+
+Saved model to /scratch/zs1542/CV-FinalProject/CVFramework/checkpoints/Unet_50_EP_1.pth.
+
+Loss Decreasing.. 2.198 >> 2.170 
+Epoch:3/30.. Train Loss: 1.070.. Val Loss: 2.170.. Train mIoU:0.160.. Val mIoU: 0.172.. Train Acc:0.673.. Val Acc:0.669.. Time: 0.79m
+
+Saved model to /scratch/zs1542/CV-FinalProject/CVFramework/checkpoints/Unet_50_EP_2.pth.
+
+Loss Not Decrease for 2 time
+Epoch:4/30.. Train Loss: 1.085.. Val Loss: 2.272.. Train mIoU:0.161.. Val mIoU: 0.164.. Train Acc:0.670.. Val Acc:0.654.. Time: 0.79m
+
+Saved model to /scratch/zs1542/CV-FinalProject/CVFramework/checkpoints/Unet_50_EP_3.pth.
+
+Loss Not Decrease for 3 time
+Epoch:5/30.. Train Loss: 1.117.. Val Loss: 2.299.. Train mIoU:0.152.. Val mIoU: 0.163.. Train Acc:0.660.. Val Acc:0.647.. Time: 0.79m
+
+Saved model to /scratch/zs1542/CV-FinalProject/CVFramework/checkpoints/Unet_50_EP_4.pth.
+
+Loss Not Decrease for 4 time
+Epoch:6/30.. Train Loss: 1.129.. Val Loss: 2.301.. Train mIoU:0.157.. Val mIoU: 0.170.. Train Acc:0.656.. Val Acc:0.648.. Time: 0.79m
+
+Saved model to /scratch/zs1542/CV-FinalProject/CVFramework/checkpoints/Unet_50_EP_5.pth.
+
+Loss Decreasing.. 2.301 >> 2.206 
+Epoch:7/30.. Train Loss: 1.124.. Val Loss: 2.206.. Train mIoU:0.155.. Val mIoU: 0.176.. Train Acc:0.659.. Val Acc:0.665.. Time: 0.80m
+
+Saved model to /scratch/zs1542/CV-FinalProject/CVFramework/checkpoints/Unet_50_EP_6.pth.
+
+Loss Not Decrease for 5 time
+Epoch:8/30.. Train Loss: 1.126.. Val Loss: 2.280.. Train mIoU:0.160.. Val mIoU: 0.176.. Train Acc:0.659.. Val Acc:0.655.. Time: 0.79m
+
+Saved model to /scratch/zs1542/CV-FinalProject/CVFramework/checkpoints/Unet_50_EP_7.pth.
+
+Loss Decreasing.. 2.280 >> 2.223 
+Epoch:9/30.. Train Loss: 1.095.. Val Loss: 2.223.. Train mIoU:0.164.. Val mIoU: 0.165.. Train Acc:0.668.. Val Acc:0.663.. Time: 0.80m
+
+Saved model to /scratch/zs1542/CV-FinalProject/CVFramework/checkpoints/Unet_50_EP_8.pth.
+
+Loss Decreasing.. 2.223 >> 2.177 
+Epoch:10/30.. Train Loss: 1.103.. Val Loss: 2.177.. Train mIoU:0.160.. Val mIoU: 0.185.. Train Acc:0.665.. Val Acc:0.676.. Time: 0.80m
+
+Saved model to /scratch/zs1542/CV-FinalProject/CVFramework/checkpoints/Unet_50_EP_9.pth.
+
+Loss Decreasing.. 2.177 >> 2.116 
+Epoch:11/30.. Train Loss: 1.092.. Val Loss: 2.116.. Train mIoU:0.163.. Val mIoU: 0.184.. Train Acc:0.667.. Val Acc:0.678.. Time: 0.80m
+
+Saved model to /scratch/zs1542/CV-FinalProject/CVFramework/checkpoints/Unet_50_EP_10.pth.
+
+Loss Decreasing.. 2.116 >> 2.101 
+Epoch:12/30.. Train Loss: 1.074.. Val Loss: 2.101.. Train mIoU:0.170.. Val mIoU: 0.190.. Train Acc:0.674.. Val Acc:0.675.. Time: 0.80m
+
+Saved model to /scratch/zs1542/CV-FinalProject/CVFramework/checkpoints/Unet_50_EP_11.pth.
+
+Loss Not Decrease for 6 time
+Epoch:13/30.. Train Loss: 1.071.. Val Loss: 2.118.. Train mIoU:0.175.. Val mIoU: 0.196.. Train Acc:0.675.. Val Acc:0.671.. Time: 0.79m
+
+Saved model to /scratch/zs1542/CV-FinalProject/CVFramework/checkpoints/Unet_50_EP_12.pth.
+
+Loss Not Decrease for 7 time
+Epoch:14/30.. Train Loss: 1.065.. Val Loss: 2.142.. Train mIoU:0.174.. Val mIoU: 0.191.. Train Acc:0.675.. Val Acc:0.673.. Time: 0.79m
+
+Saved model to /scratch/zs1542/CV-FinalProject/CVFramework/checkpoints/Unet_50_EP_13.pth.
+
+Loss Decreasing.. 2.142 >> 2.093 
+Epoch:15/30.. Train Loss: 1.044.. Val Loss: 2.093.. Train mIoU:0.180.. Val mIoU: 0.186.. Train Acc:0.679.. Val Acc:0.678.. Time: 0.80m
+
+Saved model to /scratch/zs1542/CV-FinalProject/CVFramework/checkpoints/Unet_50_EP_14.pth.
+
+Loss Not Decrease for 8 time
+Epoch:16/30.. Train Loss: 1.033.. Val Loss: 2.144.. Train mIoU:0.184.. Val mIoU: 0.193.. Train Acc:0.684.. Val Acc:0.662.. Time: 0.80m
+
+Saved model to /scratch/zs1542/CV-FinalProject/CVFramework/checkpoints/Unet_50_EP_15.pth.
+
+Loss Decreasing.. 2.144 >> 2.093 
+Epoch:17/30.. Train Loss: 1.046.. Val Loss: 2.093.. Train mIoU:0.181.. Val mIoU: 0.195.. Train Acc:0.680.. Val Acc:0.676.. Time: 0.80m
+
+Saved model to /scratch/zs1542/CV-FinalProject/CVFramework/checkpoints/Unet_50_EP_16.pth.
+
+Loss Decreasing.. 2.093 >> 2.048 
+Epoch:18/30.. Train Loss: 1.020.. Val Loss: 2.048.. Train mIoU:0.190.. Val mIoU: 0.211.. Train Acc:0.687.. Val Acc:0.688.. Time: 0.80m
+
+Saved model to /scratch/zs1542/CV-FinalProject/CVFramework/checkpoints/Unet_50_EP_17.pth.
+
+Loss Decreasing.. 2.048 >> 2.045 
+Epoch:19/30.. Train Loss: 1.005.. Val Loss: 2.045.. Train mIoU:0.191.. Val mIoU: 0.208.. Train Acc:0.694.. Val Acc:0.685.. Time: 0.80m
+
+Saved model to /scratch/zs1542/CV-FinalProject/CVFramework/checkpoints/Unet_50_EP_18.pth.
+
+Loss Decreasing.. 2.045 >> 2.016 
+Epoch:20/30.. Train Loss: 0.992.. Val Loss: 2.016.. Train mIoU:0.191.. Val mIoU: 0.212.. Train Acc:0.695.. Val Acc:0.688.. Time: 0.80m
+
+Saved model to /scratch/zs1542/CV-FinalProject/CVFramework/checkpoints/Unet_50_EP_19.pth.
+
+Loss Decreasing.. 2.016 >> 2.010 
+Epoch:21/30.. Train Loss: 0.978.. Val Loss: 2.010.. Train mIoU:0.201.. Val mIoU: 0.194.. Train Acc:0.700.. Val Acc:0.687.. Time: 0.80m
+
+Saved model to /scratch/zs1542/CV-FinalProject/CVFramework/checkpoints/Unet_50_EP_20.pth.
+
+Loss Decreasing.. 2.010 >> 1.988 
+Epoch:22/30.. Train Loss: 0.973.. Val Loss: 1.988.. Train mIoU:0.204.. Val mIoU: 0.218.. Train Acc:0.701.. Val Acc:0.697.. Time: 0.80m
+
+Saved model to /scratch/zs1542/CV-FinalProject/CVFramework/checkpoints/Unet_50_EP_21.pth.
+
+Loss Decreasing.. 1.988 >> 1.984 
+Epoch:23/30.. Train Loss: 0.971.. Val Loss: 1.984.. Train mIoU:0.202.. Val mIoU: 0.218.. Train Acc:0.701.. Val Acc:0.696.. Time: 0.80m
+
+Saved model to /scratch/zs1542/CV-FinalProject/CVFramework/checkpoints/Unet_50_EP_22.pth.
+
+Loss Decreasing.. 1.984 >> 1.957 
+Epoch:24/30.. Train Loss: 0.963.. Val Loss: 1.957.. Train mIoU:0.210.. Val mIoU: 0.217.. Train Acc:0.704.. Val Acc:0.701.. Time: 0.80m
+
+Saved model to /scratch/zs1542/CV-FinalProject/CVFramework/checkpoints/Unet_50_EP_23.pth.
+
+Loss Not Decrease for 9 time
+Epoch:25/30.. Train Loss: 0.956.. Val Loss: 1.958.. Train mIoU:0.204.. Val mIoU: 0.223.. Train Acc:0.706.. Val Acc:0.700.. Time: 0.80m
+
+Saved model to /scratch/zs1542/CV-FinalProject/CVFramework/checkpoints/Unet_50_EP_24.pth.
+
+Loss Decreasing.. 1.958 >> 1.939 
+Epoch:26/30.. Train Loss: 0.949.. Val Loss: 1.939.. Train mIoU:0.212.. Val mIoU: 0.219.. Train Acc:0.708.. Val Acc:0.702.. Time: 0.80m
+
+Saved model to /scratch/zs1542/CV-FinalProject/CVFramework/checkpoints/Unet_50_EP_25.pth.
+
+Loss Decreasing.. 1.939 >> 1.932 
+Epoch:27/30.. Train Loss: 0.943.. Val Loss: 1.932.. Train mIoU:0.210.. Val mIoU: 0.221.. Train Acc:0.710.. Val Acc:0.704.. Time: 0.80m
+
+Saved model to /scratch/zs1542/CV-FinalProject/CVFramework/checkpoints/Unet_50_EP_26.pth.
+
+Loss Not Decrease for 10 time
+Loss not decrease for 10 times, Stop Training
+Total time: 22.49 m
+Done for pruning only the ENCODER
+Now, let's huohuo DECODER
+Prune the DECODER only...
+Re-train the pruned model(decoder pruned)
+Loss Decreasing.. inf >> 2.170 
+Epoch:1/30.. Train Loss: 1.062.. Val Loss: 2.170.. Train mIoU:0.163.. Val mIoU: 0.170.. Train Acc:0.676.. Val Acc:0.666.. Time: 0.80m
+
+Saved model to /scratch/zs1542/CV-FinalProject/CVFramework/checkpoints/Unet_50_DP_0.pth.
+
+Loss Not Decrease for 1 time
+Epoch:2/30.. Train Loss: 1.064.. Val Loss: 2.179.. Train mIoU:0.162.. Val mIoU: 0.171.. Train Acc:0.675.. Val Acc:0.665.. Time: 0.80m
+
+Saved model to /scratch/zs1542/CV-FinalProject/CVFramework/checkpoints/Unet_50_DP_1.pth.
+
+Loss Not Decrease for 2 time
+Epoch:3/30.. Train Loss: 1.074.. Val Loss: 2.222.. Train mIoU:0.162.. Val mIoU: 0.164.. Train Acc:0.672.. Val Acc:0.656.. Time: 0.80m
+
+Saved model to /scratch/zs1542/CV-FinalProject/CVFramework/checkpoints/Unet_50_DP_2.pth.
+
+Loss Decreasing.. 2.222 >> 2.189 
+Epoch:4/30.. Train Loss: 1.087.. Val Loss: 2.189.. Train mIoU:0.164.. Val mIoU: 0.177.. Train Acc:0.670.. Val Acc:0.665.. Time: 0.80m
+
+Saved model to /scratch/zs1542/CV-FinalProject/CVFramework/checkpoints/Unet_50_DP_3.pth.
+
+Loss Not Decrease for 3 time
+Epoch:5/30.. Train Loss: 1.097.. Val Loss: 2.350.. Train mIoU:0.160.. Val mIoU: 0.169.. Train Acc:0.668.. Val Acc:0.638.. Time: 0.80m
+
+Saved model to /scratch/zs1542/CV-FinalProject/CVFramework/checkpoints/Unet_50_DP_4.pth.
+
+Loss Decreasing.. 2.350 >> 2.179 
+Epoch:6/30.. Train Loss: 1.105.. Val Loss: 2.179.. Train mIoU:0.159.. Val mIoU: 0.162.. Train Acc:0.665.. Val Acc:0.661.. Time: 0.80m
+
+Saved model to /scratch/zs1542/CV-FinalProject/CVFramework/checkpoints/Unet_50_DP_5.pth.
+
+Loss Not Decrease for 4 time
+Epoch:7/30.. Train Loss: 1.098.. Val Loss: 2.244.. Train mIoU:0.161.. Val mIoU: 0.168.. Train Acc:0.665.. Val Acc:0.656.. Time: 0.80m
+
+Saved model to /scratch/zs1542/CV-FinalProject/CVFramework/checkpoints/Unet_50_DP_6.pth.
+
+Loss Not Decrease for 5 time
+Epoch:8/30.. Train Loss: 1.127.. Val Loss: 2.287.. Train mIoU:0.158.. Val mIoU: 0.169.. Train Acc:0.660.. Val Acc:0.653.. Time: 0.80m
+
+Saved model to /scratch/zs1542/CV-FinalProject/CVFramework/checkpoints/Unet_50_DP_7.pth.
+
+Loss Decreasing.. 2.287 >> 2.276 
+Epoch:9/30.. Train Loss: 1.107.. Val Loss: 2.276.. Train mIoU:0.157.. Val mIoU: 0.163.. Train Acc:0.662.. Val Acc:0.650.. Time: 0.80m
+
+Saved model to /scratch/zs1542/CV-FinalProject/CVFramework/checkpoints/Unet_50_DP_8.pth.
+
+Loss Decreasing.. 2.276 >> 2.182 
+Epoch:10/30.. Train Loss: 1.093.. Val Loss: 2.182.. Train mIoU:0.167.. Val mIoU: 0.161.. Train Acc:0.666.. Val Acc:0.663.. Time: 0.80m
+
+Saved model to /scratch/zs1542/CV-FinalProject/CVFramework/checkpoints/Unet_50_DP_9.pth.
+
+Loss Decreasing.. 2.182 >> 2.174 
+Epoch:11/30.. Train Loss: 1.082.. Val Loss: 2.174.. Train mIoU:0.168.. Val mIoU: 0.181.. Train Acc:0.670.. Val Acc:0.665.. Time: 0.80m
+
+Saved model to /scratch/zs1542/CV-FinalProject/CVFramework/checkpoints/Unet_50_DP_10.pth.
+
+Loss Not Decrease for 6 time
+Epoch:12/30.. Train Loss: 1.079.. Val Loss: 2.211.. Train mIoU:0.171.. Val mIoU: 0.182.. Train Acc:0.669.. Val Acc:0.663.. Time: 0.80m
+
+Saved model to /scratch/zs1542/CV-FinalProject/CVFramework/checkpoints/Unet_50_DP_11.pth.
+
+Loss Not Decrease for 7 time
+Epoch:13/30.. Train Loss: 1.080.. Val Loss: 2.234.. Train mIoU:0.173.. Val mIoU: 0.188.. Train Acc:0.670.. Val Acc:0.661.. Time: 0.80m
+
+Saved model to /scratch/zs1542/CV-FinalProject/CVFramework/checkpoints/Unet_50_DP_12.pth.
+
+Loss Decreasing.. 2.234 >> 2.174 
+Epoch:14/30.. Train Loss: 1.054.. Val Loss: 2.174.. Train mIoU:0.180.. Val mIoU: 0.181.. Train Acc:0.679.. Val Acc:0.666.. Time: 0.80m
+
+Saved model to /scratch/zs1542/CV-FinalProject/CVFramework/checkpoints/Unet_50_DP_13.pth.
+
+Loss Decreasing.. 2.174 >> 2.146 
+Epoch:15/30.. Train Loss: 1.060.. Val Loss: 2.146.. Train mIoU:0.174.. Val mIoU: 0.186.. Train Acc:0.674.. Val Acc:0.670.. Time: 0.80m
+
+Saved model to /scratch/zs1542/CV-FinalProject/CVFramework/checkpoints/Unet_50_DP_14.pth.
+
+Loss Decreasing.. 2.146 >> 2.090 
+Epoch:16/30.. Train Loss: 1.053.. Val Loss: 2.090.. Train mIoU:0.178.. Val mIoU: 0.208.. Train Acc:0.679.. Val Acc:0.685.. Time: 0.80m
+
+Saved model to /scratch/zs1542/CV-FinalProject/CVFramework/checkpoints/Unet_50_DP_15.pth.
+
+Loss Decreasing.. 2.090 >> 2.073 
+Epoch:17/30.. Train Loss: 1.038.. Val Loss: 2.073.. Train mIoU:0.183.. Val mIoU: 0.176.. Train Acc:0.682.. Val Acc:0.676.. Time: 0.80m
+
+Saved model to /scratch/zs1542/CV-FinalProject/CVFramework/checkpoints/Unet_50_DP_16.pth.
+
+Loss Decreasing.. 2.073 >> 2.057 
+Epoch:18/30.. Train Loss: 1.021.. Val Loss: 2.057.. Train mIoU:0.183.. Val mIoU: 0.199.. Train Acc:0.686.. Val Acc:0.681.. Time: 0.80m
+
+Saved model to /scratch/zs1542/CV-FinalProject/CVFramework/checkpoints/Unet_50_DP_17.pth.
+
+Loss Decreasing.. 2.057 >> 2.051 
+Epoch:19/30.. Train Loss: 1.017.. Val Loss: 2.051.. Train mIoU:0.189.. Val mIoU: 0.196.. Train Acc:0.688.. Val Acc:0.683.. Time: 0.80m
+
+Saved model to /scratch/zs1542/CV-FinalProject/CVFramework/checkpoints/Unet_50_DP_18.pth.
+
+Loss Decreasing.. 2.051 >> 2.032 
+Epoch:20/30.. Train Loss: 1.001.. Val Loss: 2.032.. Train mIoU:0.199.. Val mIoU: 0.216.. Train Acc:0.692.. Val Acc:0.689.. Time: 0.80m
+
+Saved model to /scratch/zs1542/CV-FinalProject/CVFramework/checkpoints/Unet_50_DP_19.pth.
+
+Loss Decreasing.. 2.032 >> 2.014 
+Epoch:21/30.. Train Loss: 0.991.. Val Loss: 2.014.. Train mIoU:0.201.. Val mIoU: 0.202.. Train Acc:0.696.. Val Acc:0.688.. Time: 0.80m
+
+Saved model to /scratch/zs1542/CV-FinalProject/CVFramework/checkpoints/Unet_50_DP_20.pth.
+
+Loss Decreasing.. 2.014 >> 2.004 
+Epoch:22/30.. Train Loss: 0.981.. Val Loss: 2.004.. Train mIoU:0.198.. Val mIoU: 0.205.. Train Acc:0.698.. Val Acc:0.694.. Time: 0.80m
+
+Saved model to /scratch/zs1542/CV-FinalProject/CVFramework/checkpoints/Unet_50_DP_21.pth.
+
+Loss Not Decrease for 8 time
+Epoch:23/30.. Train Loss: 0.972.. Val Loss: 2.024.. Train mIoU:0.207.. Val mIoU: 0.208.. Train Acc:0.700.. Val Acc:0.690.. Time: 0.80m
+
+Saved model to /scratch/zs1542/CV-FinalProject/CVFramework/checkpoints/Unet_50_DP_22.pth.
+
+Loss Decreasing.. 2.024 >> 1.974 
+Epoch:24/30.. Train Loss: 0.969.. Val Loss: 1.974.. Train mIoU:0.203.. Val mIoU: 0.209.. Train Acc:0.702.. Val Acc:0.696.. Time: 0.80m
+
+Saved model to /scratch/zs1542/CV-FinalProject/CVFramework/checkpoints/Unet_50_DP_23.pth.
+
+Loss Decreasing.. 1.974 >> 1.961 
+Epoch:25/30.. Train Loss: 0.958.. Val Loss: 1.961.. Train mIoU:0.206.. Val mIoU: 0.214.. Train Acc:0.706.. Val Acc:0.698.. Time: 0.80m
+
+Saved model to /scratch/zs1542/CV-FinalProject/CVFramework/checkpoints/Unet_50_DP_24.pth.
+
+Loss Decreasing.. 1.961 >> 1.944 
+Epoch:26/30.. Train Loss: 0.953.. Val Loss: 1.944.. Train mIoU:0.207.. Val mIoU: 0.217.. Train Acc:0.707.. Val Acc:0.702.. Time: 0.80m
+
+Saved model to /scratch/zs1542/CV-FinalProject/CVFramework/checkpoints/Unet_50_DP_25.pth.
+
+Loss Not Decrease for 9 time
+Epoch:27/30.. Train Loss: 0.949.. Val Loss: 1.959.. Train mIoU:0.208.. Val mIoU: 0.209.. Train Acc:0.708.. Val Acc:0.699.. Time: 0.80m
+
+Saved model to /scratch/zs1542/CV-FinalProject/CVFramework/checkpoints/Unet_50_DP_26.pth.
+
+Loss Decreasing.. 1.959 >> 1.945 
+Epoch:28/30.. Train Loss: 0.945.. Val Loss: 1.945.. Train mIoU:0.212.. Val mIoU: 0.226.. Train Acc:0.710.. Val Acc:0.702.. Time: 0.80m
+
+Saved model to /scratch/zs1542/CV-FinalProject/CVFramework/checkpoints/Unet_50_DP_27.pth.
+
+Loss Decreasing.. 1.945 >> 1.944 
+Epoch:29/30.. Train Loss: 0.942.. Val Loss: 1.944.. Train mIoU:0.211.. Val mIoU: 0.223.. Train Acc:0.710.. Val Acc:0.702.. Time: 0.80m
+
+Saved model to /scratch/zs1542/CV-FinalProject/CVFramework/checkpoints/Unet_50_DP_28.pth.
+
+Loss Decreasing.. 1.944 >> 1.944 
+Epoch:30/30.. Train Loss: 0.941.. Val Loss: 1.944.. Train mIoU:0.211.. Val mIoU: 0.215.. Train Acc:0.711.. Val Acc:0.702.. Time: 0.80m
+
+Saved model to /scratch/zs1542/CV-FinalProject/CVFramework/checkpoints/Unet_50_DP_29.pth.
+
+Total time: 23.99 m
+Done for DECODER
+FINISH

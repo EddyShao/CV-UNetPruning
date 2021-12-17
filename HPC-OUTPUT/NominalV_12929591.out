@@ -1,0 +1,158 @@
+Your NetID is: zs1542
+Your environment is: py38
+start training
+Total Images:  198
+Total Images:  198
+Total classes: 24
+Start Training
+Epoch: 0
+>>>> [Epoch: 0] Avg. loss: 1140906166.3607 | Mean IoU: 0.2289 | Accuracy 3.4224
+
+Saved model to /scratch/zs1542/CV-FinalProject/CVFramework/checkpoints/Unet_0.pth.
+
+Epoch: 1
+>>>> [Epoch: 1] Avg. loss: 35.8807 | Mean IoU: 0.4142 | Accuracy 5.7302
+
+Saved model to /scratch/zs1542/CV-FinalProject/CVFramework/checkpoints/Unet_1.pth.
+
+Epoch: 2
+>>>> [Epoch: 2] Avg. loss: 35.1767 | Mean IoU: 0.3233 | Accuracy 5.3289
+
+Saved model to /scratch/zs1542/CV-FinalProject/CVFramework/checkpoints/Unet_2.pth.
+
+Epoch: 3
+>>>> [Epoch: 3] Avg. loss: 35.1511 | Mean IoU: 0.3416 | Accuracy 5.8192
+
+Saved model to /scratch/zs1542/CV-FinalProject/CVFramework/checkpoints/Unet_3.pth.
+
+Epoch: 4
+>>>> [Epoch: 4] Avg. loss: 34.8126 | Mean IoU: 0.3326 | Accuracy 5.8038
+
+Saved model to /scratch/zs1542/CV-FinalProject/CVFramework/checkpoints/Unet_4.pth.
+
+Epoch: 5
+>>>> [Epoch: 5] Avg. loss: 34.6902 | Mean IoU: 0.3211 | Accuracy 5.7451
+
+Saved model to /scratch/zs1542/CV-FinalProject/CVFramework/checkpoints/Unet_5.pth.
+
+Epoch: 6
+>>>> [Epoch: 6] Avg. loss: 34.7655 | Mean IoU: 0.3294 | Accuracy 5.7839
+
+Saved model to /scratch/zs1542/CV-FinalProject/CVFramework/checkpoints/Unet_6.pth.
+
+Epoch: 7
+>>>> [Epoch: 7] Avg. loss: 34.4139 | Mean IoU: 0.3336 | Accuracy 5.7609
+
+Saved model to /scratch/zs1542/CV-FinalProject/CVFramework/checkpoints/Unet_7.pth.
+
+Epoch: 8
+>>>> [Epoch: 8] Avg. loss: 34.0481 | Mean IoU: 0.3889 | Accuracy 5.8313
+
+Saved model to /scratch/zs1542/CV-FinalProject/CVFramework/checkpoints/Unet_8.pth.
+
+Epoch: 9
+>>>> [Epoch: 9] Avg. loss: 34.1202 | Mean IoU: 0.5275 | Accuracy 5.7891
+
+Saved model to /scratch/zs1542/CV-FinalProject/CVFramework/checkpoints/Unet_9.pth.
+
+Epoch: 10
+>>>> [Epoch: 10] Avg. loss: 33.2907 | Mean IoU: 0.5725 | Accuracy 6.3881
+
+Saved model to /scratch/zs1542/CV-FinalProject/CVFramework/checkpoints/Unet_10.pth.
+
+Epoch: 11
+>>>> [Epoch: 11] Avg. loss: 32.3813 | Mean IoU: 0.6264 | Accuracy 6.8020
+
+Saved model to /scratch/zs1542/CV-FinalProject/CVFramework/checkpoints/Unet_11.pth.
+
+Epoch: 12
+>>>> [Epoch: 12] Avg. loss: 32.4797 | Mean IoU: 0.6815 | Accuracy 7.0814
+
+Saved model to /scratch/zs1542/CV-FinalProject/CVFramework/checkpoints/Unet_12.pth.
+
+Epoch: 13
+>>>> [Epoch: 13] Avg. loss: 31.2396 | Mean IoU: 0.8966 | Accuracy 7.7131
+
+Saved model to /scratch/zs1542/CV-FinalProject/CVFramework/checkpoints/Unet_13.pth.
+
+Epoch: 14
+>>>> [Epoch: 14] Avg. loss: 31.5645 | Mean IoU: 0.8460 | Accuracy 7.5071
+
+Saved model to /scratch/zs1542/CV-FinalProject/CVFramework/checkpoints/Unet_14.pth.
+
+Epoch: 15
+>>>> [Epoch: 15] Avg. loss: 31.0862 | Mean IoU: 0.8920 | Accuracy 7.7194
+
+Saved model to /scratch/zs1542/CV-FinalProject/CVFramework/checkpoints/Unet_15.pth.
+
+Epoch: 16
+>>>> [Epoch: 16] Avg. loss: 31.4691 | Mean IoU: 0.8865 | Accuracy 7.8253
+
+Saved model to /scratch/zs1542/CV-FinalProject/CVFramework/checkpoints/Unet_16.pth.
+
+Epoch: 17
+>>>> [Epoch: 17] Avg. loss: 30.7646 | Mean IoU: 1.0519 | Accuracy 7.9428
+
+Saved model to /scratch/zs1542/CV-FinalProject/CVFramework/checkpoints/Unet_17.pth.
+
+Epoch: 18
+>>>> [Epoch: 18] Avg. loss: 30.3111 | Mean IoU: 0.9870 | Accuracy 8.2104
+
+Saved model to /scratch/zs1542/CV-FinalProject/CVFramework/checkpoints/Unet_18.pth.
+
+Epoch: 19
+>>>> [Epoch: 19] Avg. loss: 30.0932 | Mean IoU: 1.0003 | Accuracy 8.4395
+
+Saved model to /scratch/zs1542/CV-FinalProject/CVFramework/checkpoints/Unet_19.pth.
+
+Epoch: 20
+>>>> [Epoch: 20] Avg. loss: 29.8775 | Mean IoU: 1.2573 | Accuracy 8.4245
+
+Saved model to /scratch/zs1542/CV-FinalProject/CVFramework/checkpoints/Unet_20.pth.
+
+Epoch: 21
+>>>> [Epoch: 21] Avg. loss: 30.3064 | Mean IoU: 1.2354 | Accuracy 8.3255
+
+Saved model to /scratch/zs1542/CV-FinalProject/CVFramework/checkpoints/Unet_21.pth.
+
+Epoch: 22
+>>>> [Epoch: 22] Avg. loss: 29.3464 | Mean IoU: 1.4137 | Accuracy 8.5095
+
+Saved model to /scratch/zs1542/CV-FinalProject/CVFramework/checkpoints/Unet_22.pth.
+
+Epoch: 23
+>>>> [Epoch: 23] Avg. loss: 29.6697 | Mean IoU: 1.3396 | Accuracy 8.4870
+
+Saved model to /scratch/zs1542/CV-FinalProject/CVFramework/checkpoints/Unet_23.pth.
+
+Epoch: 24
+>>>> [Epoch: 24] Avg. loss: 29.6502 | Mean IoU: 1.4251 | Accuracy 8.4733
+
+Saved model to /scratch/zs1542/CV-FinalProject/CVFramework/checkpoints/Unet_24.pth.
+
+Epoch: 25
+>>>> [Epoch: 25] Avg. loss: 29.9142 | Mean IoU: 1.2485 | Accuracy 8.2497
+
+Saved model to /scratch/zs1542/CV-FinalProject/CVFramework/checkpoints/Unet_25.pth.
+
+Epoch: 26
+>>>> [Epoch: 26] Avg. loss: 31.2888 | Mean IoU: 1.1856 | Accuracy 7.7079
+
+Saved model to /scratch/zs1542/CV-FinalProject/CVFramework/checkpoints/Unet_26.pth.
+
+Epoch: 27
+>>>> [Epoch: 27] Avg. loss: 29.6925 | Mean IoU: 1.4219 | Accuracy 8.5171
+
+Saved model to /scratch/zs1542/CV-FinalProject/CVFramework/checkpoints/Unet_27.pth.
+
+Epoch: 28
+>>>> [Epoch: 28] Avg. loss: 29.4591 | Mean IoU: 1.5034 | Accuracy 8.3741
+
+Saved model to /scratch/zs1542/CV-FinalProject/CVFramework/checkpoints/Unet_28.pth.
+
+Epoch: 29
+>>>> [Epoch: 29] Avg. loss: 29.2399 | Mean IoU: 1.5435 | Accuracy 8.5811
+
+Saved model to /scratch/zs1542/CV-FinalProject/CVFramework/checkpoints/Unet_29.pth.
+
+FINISH
